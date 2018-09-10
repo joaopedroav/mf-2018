@@ -12,7 +12,7 @@ public class Aplicacao {
 
     public static final String URL_CVS = "http://repositorio.dados.gov.br/educacao/CADASTRO%20DAS%20IES_2011.csv";
     public static final String LINHA_FINAL = "Fonte: MEC/Inep; Tabela elaborada pelo Inep/DEED";
-    public static final String CAMINHO_ARQUIVO = "file/IES_2011.csv";
+    public static final String CAMINHO_ARQUIVO = "IES_2011.csv";
 
     public static void main(String[] args) throws IOException {
         salvarArquivo(URL_CVS, CAMINHO_ARQUIVO);
