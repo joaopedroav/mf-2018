@@ -13,16 +13,15 @@ public class Aplicacao {
     public static final String URL_CVS = "http://repositorio.dados.gov.br/educacao/CADASTRO%20DAS%20IES_2011.csv";
     public static final String LINHA_FINAL = "Fonte: MEC/Inep; Tabela elaborada pelo Inep/DEED";
     public static final String CAMINHO_ARQUIVO = "IES_2011.csv";
-
+    public static final int INDICE_ESTADO = 9;
     public static final int CABECALHO = 10;
 
     public static void main(String[] args) throws IOException {
         salvarArquivo(URL_CVS, CAMINHO_ARQUIVO);
-        ArrayList<String> coluna = lerArquivo(CAMINHO_ARQUIVO);
-        System.out.println(coluna.get(1));
-        //for(int i = 0; i < 10; i++) {
-        //   System.out.println(coluna.get(i));
-        //}
+        ArrayList<String> siglasEstados = lerArquivo(CAMINHO_ARQUIVO);
+        for (int i = 0; i < siglasEstados.size(); i++) {
+            System.out.println(siglasEstados.get(i));
+        }
     }
 
     public static void salvarArquivo(String link, String caminho) throws IOException {
@@ -46,21 +45,22 @@ public class Aplicacao {
         BufferedReader conteudo = null;
         String linha = "";
         ArrayList<String> colunas = new ArrayList<String>();
-        String[] x = null;
-        int numLinhasArq = 0, i = 0;//index do ArrayList
+        String[] estados = null;
+        int numLinhasArq = 0, indiceLista = 0;
         try {
             conteudo = new BufferedReader(new FileReader(caminho));
             while((linha = conteudo.readLine()) != null) {
                 if (numLinhasArq > CABECALHO) {
-                    colunas.add(linha);
-                    x = colunas.get(i).split(";");
-                    System.out.println(x[9]);//indices das siglas
-                    i++;
+                    estados = linha.split(";");
+                    if (estados.length > INDICE_ESTADO) {
+                        colunas.add(estados[INDICE_ESTADO]);
+                        //System.out.println(colunas.get(indiceLista));
+                        //indiceLista++;
+                    }
                 }
                 numLinhasArq++;
             }
         } catch (IOException e) {}
-        System.out.println("xxxxxxxxxxxxxx");
         return colunas;
     }
 }
