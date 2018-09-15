@@ -19,8 +19,12 @@ public class Aplicacao {
     public static void main(String[] args) throws IOException {
         salvarArquivo(URL_CVS, CAMINHO_ARQUIVO);
         ArrayList<String> siglasEstados = lerArquivo(CAMINHO_ARQUIVO);
-        for (int i = 0; i < siglasEstados.size(); i++) {
-            System.out.println(siglasEstados.get(i));
+        ArrayList<String> ocorrencias = extrairEstados(siglasEstados);
+        int[] vetor = contarEstados(siglasEstados, ocorrencias);
+        for(int i = 0; i < ocorrencias.size(); i++) {
+            System.out.print(ocorrencias.get(i));
+            System.out.print("\t");
+            System.out.println(vetor[i]);
         }
     }
 
@@ -54,8 +58,6 @@ public class Aplicacao {
                     estados = linha.split(";");
                     if (estados.length > INDICE_ESTADO) {
                         colunas.add(estados[INDICE_ESTADO]);
-                        //System.out.println(colunas.get(indiceLista));
-                        //indiceLista++;
                     }
                 }
                 numLinhasArq++;
@@ -63,4 +65,28 @@ public class Aplicacao {
         } catch (IOException e) {}
         return colunas;
     }
+
+     public static ArrayList<String> extrairEstados(ArrayList<String> estados) {
+        ArrayList<String> ocorrenciaEstado = new ArrayList<String>();
+        for(int i = 0; i < estados.size(); i++) {
+            if(!ocorrenciaEstado.contains(estados.get(i))) {
+                ocorrenciaEstado.add(estados.get(i));
+            }
+        }
+        return ocorrenciaEstado;
+     }
+
+     public static int[] contarEstados(ArrayList<String> estados, ArrayList<String> siglas) {
+        int TAM = siglas.size();
+        int[] vetor = new int[TAM];
+        for(int i = 0; i < estados.size(); i++) {
+            for(int j = 0; j < TAM; j++) {
+                if(siglas.get(j).equals(estados.get(i))) {
+                    vetor[j] = vetor[j] + 1;
+                }
+            }
+        }
+
+        return vetor;
+     }
 }
