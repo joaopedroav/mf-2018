@@ -10,14 +10,20 @@ import java.net.URL;
 
 public class Aplicacao {
 
-    public static final String URL_CVS = "http://repositorio.dados.gov.br/educacao/CADASTRO%20DAS%20IES_2011.csv";
+    public static final String URL_CSV = "http://repositorio.dados.gov.br/educacao/CADASTRO%20DAS%20IES_2011.csv";
     public static final String LINHA_FINAL = "Fonte: MEC/Inep; Tabela elaborada pelo Inep/DEED";
     public static final String CAMINHO_ARQUIVO = "IES_2011.csv";
     public static final int INDICE_ESTADO = 9;
     public static final int CABECALHO = 10;
 
     public static void main(String[] args) throws IOException {
-        salvarArquivo(URL_CVS, CAMINHO_ARQUIVO);
+        String URL = "";
+        if(args.length > 0) {
+            URL = args[0];
+        } else {
+            URL = URL_CSV;
+        }
+        salvarArquivo(URL, CAMINHO_ARQUIVO);
         ArrayList<String> siglasEstados = lerArquivo(CAMINHO_ARQUIVO);
         ArrayList<String> ocorrencias = extrairEstados(siglasEstados);
         int[] vetor = contarEstados(siglasEstados, ocorrencias);
