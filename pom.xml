@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.mainClass>com.github.kyriosdata.exemplo.ProgramaCalendario</project.mainClass>
+        <project.mainClass>com.github.jops425.mf-2018.Aplicacao</project.mainClass>
     </properties>
 
     <name>${project.groupId}:${project.artifactId}</name>
