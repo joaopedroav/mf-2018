@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.net.URL;
+import java.util.Comparator;
+import java.util.Collections;
 
 public class Aplicacao {
 
@@ -15,6 +17,7 @@ public class Aplicacao {
     public static final String CAMINHO_ARQUIVO = "IES_2011.csv";
     public static final int INDICE_ESTADO = 9;
     public static final int CABECALHO = 10;
+    public static final int TAM = 26;
 
     public static void main(String[] args) throws IOException {
         String URL = "";
@@ -27,10 +30,9 @@ public class Aplicacao {
         ArrayList<String> siglasEstados = lerArquivo(CAMINHO_ARQUIVO);
         ArrayList<String> ocorrencias = extrairEstados(siglasEstados);
         int[] vetor = contarEstados(siglasEstados, ocorrencias);
-        for(int i = 0; i < ocorrencias.size(); i++) {
-            System.out.print(ocorrencias.get(i));
-            System.out.print("\t");
-            System.out.println(vetor[i]);
+        ArrayList<Estado> ordem = ordenar(ocorrencias, vetor);
+        for(int i = 0; i < TAM; i++) {
+            System.out.println(ordem.get(i));
         }
     }
 
@@ -83,7 +85,6 @@ public class Aplicacao {
      }
 
      public static int[] contarEstados(ArrayList<String> estados, ArrayList<String> siglas) {
-        int TAM = siglas.size();
         int[] vetor = new int[TAM];
         for(int i = 0; i < estados.size(); i++) {
             for(int j = 0; j < TAM; j++) {
@@ -95,4 +96,34 @@ public class Aplicacao {
 
         return vetor;
      }
+
+     public static ArrayList<Estado> ordenar(ArrayList<String> siglas, int[] numInst) {
+         ArrayList<Estado> colecao = new ArrayList<Estado>();
+         for (int i = 0; i < TAM; i++) {
+            colecao.add(new Estado(siglas.get(i), numInst[i]));
+         }
+         Collections.sort(colecao, new SortByInst());
+         return colecao;
+     }
+
+}
+
+class Estado {
+    int numInst;
+    String sigla;
+    public Estado(String sigla, int numInst) {
+        this.numInst = numInst;
+        this.sigla = sigla;
+    }
+
+    public String toString() {
+        String estado = this.sigla + " " + this.numInst;
+        return estado;
+    }
+}
+
+class SortByInst implements Comparator<Estado> {
+    public int compare(Estado est1, Estado est2) {
+        return est2.numInst - est1.numInst;
+    }
 }
