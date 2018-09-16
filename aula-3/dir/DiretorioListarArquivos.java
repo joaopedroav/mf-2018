@@ -8,7 +8,7 @@ public class DiretorioListarArquivos {
 		mostrarDiretorios(files);
 	}
 
-	public static void mostrarDiretorios(File file) {
+	public static void mostrarArquivos(File file) {
         try {
             File[] listaArquivos = file.listFiles();
             for (File arquivo : listaArquivos) {
