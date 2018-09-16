@@ -17,7 +17,6 @@ public class Aplicacao {
     public static final String CAMINHO_ARQUIVO = "IES_2011.csv";
     public static final int INDICE_ESTADO = 9;
     public static final int CABECALHO = 10;
-    public static final int TAM = 26;
 
     public static void main(String[] args) throws IOException {
         String URL = "";
@@ -31,7 +30,7 @@ public class Aplicacao {
         ArrayList<String> ocorrencias = extrairEstados(siglasEstados);
         int[] vetor = contarEstados(siglasEstados, ocorrencias);
         ArrayList<Estado> ordem = ordenar(ocorrencias, vetor);
-        for(int i = 0; i < TAM; i++) {
+        for(int i = 0; i < ocorrencias.size(); i++) {
             System.out.println(ordem.get(i));
         }
     }
@@ -85,6 +84,7 @@ public class Aplicacao {
      }
 
      public static int[] contarEstados(ArrayList<String> estados, ArrayList<String> siglas) {
+        int TAM = siglas.size();
         int[] vetor = new int[TAM];
         for(int i = 0; i < estados.size(); i++) {
             for(int j = 0; j < TAM; j++) {
@@ -99,7 +99,7 @@ public class Aplicacao {
 
      public static ArrayList<Estado> ordenar(ArrayList<String> siglas, int[] numInst) {
          ArrayList<Estado> colecao = new ArrayList<Estado>();
-         for (int i = 0; i < TAM; i++) {
+         for (int i = 0; i < siglas.size(); i++) {
             colecao.add(new Estado(siglas.get(i), numInst[i]));
          }
          Collections.sort(colecao, new SortByInst());
