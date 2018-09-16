@@ -2,28 +2,47 @@ import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.io.IOException;
 import java.io.FileReader;
+import java.io.File;
 
 public class ContaLinhas {
 
     public static void main(String[] args) {
-        ArrayList<String> linhas = lerArquivo("../csv/IES_2011.csv");
-        System.out.println("O arquivo tem " + contaLinhas(linhas) + " linhas.");
+        int linhasTotais = 0;
+        File files = new File(System.getProperty("user.dir"));
+        ArrayList<String> lista = listarArquivos(files);
+        for(int i = 0; i < lista.size(); i++) {
+            int aux = contaLinhas(lista.get(i));
+            System.out.println(aux + " " + lista.get(i));
+            linhasTotais = linhasTotais + aux;
+        }
+        System.out.println("Total de linhas = " + linhasTotais);
     }
 
-    public static int contaLinhas(ArrayList<String> linhas) {
-        return linhas.size();
-    }
-
-    public static ArrayList<String> lerArquivo(String caminho) {
+    public static int contaLinhas(String caminho) {
         BufferedReader conteudo = null;
-        ArrayList<String> colunas = new ArrayList<String>();
+        ArrayList<String> linhas = new ArrayList<String>();
         String linha = "";
         try {
             conteudo = new BufferedReader(new FileReader(caminho));
             while((linha = conteudo.readLine()) != null) {
-                colunas.add(linha);
+                linhas.add(linha);
             }
         } catch (IOException e) {}
-        return colunas;
+        return linhas.size();
     }
+
+    public static ArrayList<String> listarArquivos(File file) {
+        ArrayList<String> lista = new ArrayList<String>();
+        try {
+            File[] listaArquivos = file.listFiles();
+            for (File arquivo : listaArquivos) {
+                if (!arquivo.isDirectory()) {
+                    lista.add(arquivo.getCanonicalPath());
+                }
+            }
+        } catch (IOException e) {
+			e.printStackTrace();
+		}
+		return lista;
+	}
 }
