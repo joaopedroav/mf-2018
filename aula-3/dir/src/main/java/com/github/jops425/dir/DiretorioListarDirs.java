@@ -3,14 +3,36 @@ package com.github.jops425.dir;
 import java.io.File;
 import java.io.IOException;
 
-public class DiretorioListarDirs {
+/**
+ * Listar diretórios.
+ *
+ * @author João Pedro
+ */
+public final class DiretorioListarDirs {
 
-	public static void main(String[] args) {
-		File dirs = new File(System.getProperty("user.dir"));
-		mostrarDiretorios(dirs);
-	}
+    /**
+     * Construção.
+     */
+    private DiretorioListarDirs() {
 
-	public static void mostrarDiretorios(File dir) {
+    }
+
+    /**
+     * Método main.
+     *
+     * @param args Parâmetros passados por linha de comando.
+     */
+    public static void main(final String[] args) {
+        File dirs = new File(System.getProperty("user.dir"));
+        mostrarDiretorios(dirs);
+    }
+
+    /**
+     * Mostrar caminho dos diretórios.
+     *
+     * @param dir Diretório atual.
+     */
+    public static void mostrarDiretorios(final File dir) {
         try {
             File[] diretorios = dir.listFiles();
             for (File diretorio : diretorios) {
@@ -20,8 +42,8 @@ public class DiretorioListarDirs {
                 }
             }
         } catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+            e.printStackTrace();
+        }
+    }
 
 }
