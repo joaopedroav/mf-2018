@@ -24,17 +24,17 @@
     -->
 
     <groupId>com.github.jops425</groupId>
-    <artifactId>csv</artifactId>
+    <artifactId>cnes</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0</version>
 
-    <name>com.github.jops425:csv</name>
+    <name>com.github.jops425:cnes</name>
 
     <description>
         Projeto de referência (exemplo) inicial de desenvolvimento em Java com uso de JUnit.
     </description>
 
-    <url>https://github.com/jops425/mf-2018/tree/master/aula-3</url>
+    <url>https://github.com/jops425/mf-2018/tree/master/aula-5</url>
 
     <organization>
         <name>Instituto de Informática (UFG) - Fábrica de Software</name>
@@ -106,7 +106,7 @@
     <build>
 
         <!-- Define o nome do arquivo a ser gerado (.jar é acrescentada) -->
-        <finalName>CSV</finalName>
+        <finalName>cnes</finalName>
 
         <plugins>
 
@@ -148,10 +148,10 @@
                 <version>1.1.10</version>
                 <configuration>
                     <targetClasses>
-                        <param>com.github.jops425.csv.Aplicacao</param>
+                        <param>com.github.jops425.cnes.Main</param>
                     </targetClasses>
                     <targetTests>
-                        <param>com.github.jops425.csv.*</param>
+                        <param>com.github.jops425.cnes.*</param>
                     </targetTests>
                 </configuration>
             </plugin>
@@ -202,7 +202,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>jars/</classpathPrefix>
-                            <mainClass>com.github.jops425.csv.Aplicacao</mainClass>
+                            <mainClass>com.github.jops425.cnes.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
