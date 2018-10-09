@@ -19,7 +19,10 @@ public final class Main {
      * @param args Parâmetros a serem entrados na linha de comando.
      */
     public static void main(final String[] args) {
-        System.out.println(".");
+        String url =
+        "ftp://ftp.datasus.gov.br/cnes/BASE_DE_DADOS_CNES_201808.ZIP";
+        String caminho = "cnes.zip";
+        Arquivo.baixarArquivo(url, caminho);
     }
 
 }
