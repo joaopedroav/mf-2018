@@ -37,6 +37,11 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
+### atualizacao ###
 baseDados/
+.classpath
+.factorypath
+.project
+.settings
 
 # End of https://www.gitignore.io/api/java,maven
