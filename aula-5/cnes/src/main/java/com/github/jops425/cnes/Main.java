@@ -1,6 +1,7 @@
 package com.github.jops425.cnes;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Classe Main do projeto cnes.
@@ -23,12 +24,15 @@ public final class Main {
      */
     public static void main(final String[] args) throws IOException {
         // String url = args[0];
-        String caminho = "cnes.zip";
+        // String caminho = "cnes.zip";
         // Arquivo.baixarZip(url, caminho);
-        //String caminhoZip = "tbEstabelecimento201808.csv";
-        String destinoZip = "baseDados";
-        Arquivo.descompactar(caminho, destinoZip);
-
+        String caminhoZip = "tbEstabelecimento201808.csv";
+        // String destinoZip = "baseDados";
+        // Arquivo.descompactar(caminho, destinoZip);
+        ArrayList<Estabelecimento> estabelecimento = Colunas.extrairColunas("baseDados/" + caminhoZip);
+        for (int i = 0; i < estabelecimento.size(); i++) {
+            System.out.println(estabelecimento.get(i));
+        }
     }
 
 }
