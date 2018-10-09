@@ -43,5 +43,6 @@ baseDados/
 .factorypath
 .project
 .settings
+.vscode
 
 # End of https://www.gitignore.io/api/java,maven
