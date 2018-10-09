@@ -8,7 +8,7 @@ import java.io.IOException;
 /**
  * Classe para extrair colunas do arquivo lido.
  */
-public class Colunas {
+public final class Colunas {
 
     /**
      * Construtor.
@@ -20,25 +20,28 @@ public class Colunas {
     /**
      * Índice do vetor, razão social.
      */
-    private static int IND2 = 5;
+    private static final int IND2 = 5;
 
     /**
      * Índice do vetor, latitude.
      */
-    private static int IND3 = 39;
+    private static final int IND3 = 39;
 
     /**
      * Índice do vetor, longitude.
      */
-    private static int IND4 = 40;
+    private static final int IND4 = 40;
 
     /**
      * Método para extrair as colunas necessárias.
      *
      * @param caminho Diretório corrente do arquivo.
+     * @return coleção.
      */
-    public static ArrayList<Estabelecimento> extrairColunas(final String caminho) {
-        ArrayList<Estabelecimento> estabelecimento = new ArrayList<Estabelecimento>();
+    public static ArrayList<Estabelecimento>
+    extrairColunas(final String caminho) {
+        ArrayList<Estabelecimento> estabelecimento =
+        new ArrayList<Estabelecimento>();
         BufferedReader conteudo = null;
         String linha = "";
         String[] celulas = null;
@@ -48,7 +51,8 @@ public class Colunas {
             while ((linha = conteudo.readLine()) != null) {
                 if (numLinhasArq > 0) {
                     celulas = linha.split(";");
-                    estabelecimento.add(new Estabelecimento(celulas[1], celulas[IND2], celulas[IND3], celulas[IND4]));
+                    estabelecimento.add(new Estabelecimento(celulas[1],
+                    celulas[IND2], celulas[IND3], celulas[IND4]));
                 }
                 numLinhasArq++;
             }

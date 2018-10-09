@@ -21,45 +21,70 @@ public class Estabelecimento {
     private String lat;
 
     /**
-     * Longitude
+     * Longitude.
      */
     private String lng;
 
     /**
      * Construtor.
      *
-     * @param coCnes Código do estabelecimento.
-     * @param razaoSocial Razão social.
-     * @param lat Latitude.
-     * @param lgn Longitude.
+     * @param cCnes Código do estabelecimento.
+     * @param razaoSoc Razão social.
+     * @param lt Latitude.
+     * @param lg Longitude.
      */
-    public Estabelecimento(final String coCnes, final String razaoSocial,
-    final String lat, final String lng) {
-        this.coCnes = coCnes;
-        this.razaoSocial = razaoSocial;
-        this.lat = lat;
-        this.lng = lng;
+    public Estabelecimento(final String cCnes, final String razaoSoc,
+    final String lt, final String lg) {
+        this.coCnes = cCnes;
+        this.razaoSocial = razaoSoc;
+        this.lat = lt;
+        this.lng = lg;
     }
 
-    public String lng() {
+    /**
+     * Getter p/ longitude.
+     *
+     * @return longitude.
+     */
+    public final String getLng() {
         return this.lng;
     }
 
-    public String getLat() {
+    /**
+     * Getter p/ latitude.
+     *
+     * @return latitude.
+     */
+    public final String getLat() {
         return this.lat;
     }
 
-    public String getRazaoSocial() {
+    /**
+     * Getter p/ razão social.
+     *
+     * @return Razão social.
+     */
+    public final String getRazaoSocial() {
         return this.razaoSocial;
     }
-    public String getCoCnes() {
+
+    /**
+     * Getter p/ Código do estabelecimento.
+     *
+     * @return Código do estabelecimento.
+     */
+    public final String getCoCnes() {
         return this.coCnes;
     }
 
-    public String toString() {
-        String estabelecimento =
-        this.coCnes + " " + this.razaoSocial + " " +
-        this.lat + " " + this.lng;
+    /**
+     * Retorna coleção em String.
+     *
+     * @return Coleção.
+     */
+    public final String toString() {
+        String estabelecimento = this.coCnes
+        + " " + this.razaoSocial + " " + this.lat + " " + this.lng;
         return estabelecimento;
     }
 }

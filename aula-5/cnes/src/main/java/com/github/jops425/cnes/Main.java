@@ -32,7 +32,8 @@ public final class Main {
         String caminhoZip = "tbEstabelecimento201808.csv";
         // String destinoZip = "baseDados";
         // Arquivo.descompactar(caminho, destinoZip);
-        ArrayList<Estabelecimento> estabelecimento = Colunas.extrairColunas("baseDados/" + caminhoZip);
+        ArrayList<Estabelecimento> estabelecimento =
+        Colunas.extrairColunas("baseDados/" + caminhoZip);
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = gsonBuilder.create();
         System.out.println(gson.toJson(estabelecimento));
