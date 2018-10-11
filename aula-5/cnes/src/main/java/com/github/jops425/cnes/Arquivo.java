@@ -119,7 +119,7 @@ public final class Arquivo {
      */
     public static void salvarArquivo(
         final ArrayList<Estabelecimento> estabelecimento) {
-        try (Writer writer = new FileWriter("estabelecimentos.json")) {
+        try (Writer writer = new FileWriter("web-app/estabelecimentos.json")) {
             Gson gson = new GsonBuilder().create();
             gson.toJson(estabelecimento, writer);
             System.out.println("Arquivo .json gerado");
