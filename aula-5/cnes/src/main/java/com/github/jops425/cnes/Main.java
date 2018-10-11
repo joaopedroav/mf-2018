@@ -38,7 +38,7 @@ public final class Main {
         String destinoZip = "baseDados";
         Arquivo.descompactar(caminho, destinoZip);
         ArrayList<Estabelecimento> estabelecimento =
-        Colunas.extrairColunas("baseDados/" + caminhoZip);
+        Colunas.extrairColunas(destinoZip + "/" + caminhoZip);
         Arquivo.salvarArquivo(estabelecimento);
     }
 
