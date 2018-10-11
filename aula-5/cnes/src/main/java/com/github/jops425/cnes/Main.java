@@ -16,6 +16,9 @@ public final class Main {
 
     }
 
+    /**
+     * URL default.
+     */
     public static final String URL_ZIP =
     "ftp://ftp.datasus.gov.br/cnes/BASE_DE_DADOS_CNES_201808.ZIP";
 
