@@ -16,8 +16,6 @@ import java.io.BufferedOutputStream;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-//apagar
-import java.util.Formatter;
 /**
  * Classe Arquivo do projeto cnes.
  *
