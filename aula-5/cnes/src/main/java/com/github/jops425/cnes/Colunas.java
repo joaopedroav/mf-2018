@@ -58,6 +58,7 @@ public final class Colunas {
             }
         } catch (IOException e) {
         }
+        System.out.println("Colunas extraídas");
         return estabelecimento;
     }
 }

@@ -5,12 +5,19 @@ import java.io.FileOutputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Writer;
+import java.io.FileWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
+import java.util.ArrayList;
 import java.io.BufferedOutputStream;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
+//apagar
+import java.util.Formatter;
 /**
  * Classe Arquivo do projeto cnes.
  *
@@ -36,6 +43,7 @@ public final class Arquivo {
      * @param caminho Caminho do arquivo a ser baixado.
      */
     public static void baixarZip(final String link, final String caminho) {
+        System.out.println("Baixando arquivo");
         try {
             URL url = new URL(link);
             URLConnection conexao = url.openConnection();
@@ -67,6 +75,7 @@ public final class Arquivo {
      */
     public static void descompactar(final String dir, final String dest)
     throws IOException {
+        System.out.println("Descompactando arquivo");
         File destDir = new File(dest);
         if (!destDir.exists()) {
             destDir.mkdir();
@@ -83,6 +92,7 @@ public final class Arquivo {
             zipEntry = zIS.getNextEntry();
         }
         zIS.close();
+        System.out.println("Arquivo descompactado");
     }
 
     /**
@@ -103,4 +113,19 @@ public final class Arquivo {
         }
         bOS.close();
     }
+
+    /**
+     * Converte coleção para json e salva em novo arquivo.
+     *
+     * @param estabelecimento Coleção.
+     */
+    public static void salvarArquivo(
+        final ArrayList<Estabelecimento> estabelecimento) {
+        try (Writer writer = new FileWriter("estabelecimentos.json")) {
+            Gson gson = new GsonBuilder().create();
+            gson.toJson(estabelecimento, writer);
+            System.out.println("Arquivo .json gerado");
+        } catch (Exception e) { }
+    }
+
 }
