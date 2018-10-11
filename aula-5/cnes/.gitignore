@@ -44,5 +44,6 @@ baseDados/
 .project
 .settings
 .vscode
+*.json
 
 # End of https://www.gitignore.io/api/java,maven
