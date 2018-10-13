@@ -1,0 +1,23 @@
+#conteudo {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+#conteudo td, #conteudo th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#conteudo tr:nth-child(even){background-color: #f2f2f2;}
+
+#conteudo tr:hover {background-color: #ddd;}
+
+#conteudo th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0077ff;
+    color: white;
+}
