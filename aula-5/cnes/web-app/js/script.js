@@ -4,13 +4,13 @@ $(document).ready(function () {
     var saida = '<tr><th>Código CNES</th><th>Razão social</th></tr>';
     var total = estabelecimentos.length;
     for (i = 0; i < 100; i++) {
-      estabelecimentos[i].coCnes = estabelecimentos[i].coCnes.replace("\"", "");
-      estabelecimentos[i].coCnes = estabelecimentos[i].coCnes.replace("\"", "");
-      estabelecimentos[i].razaoSocial = estabelecimentos[i].razaoSocial.replace("\"", "");
-      estabelecimentos[i].razaoSocial = estabelecimentos[i].razaoSocial.replace("\"", "");
+      var coCnes = estabelecimentos[i].coCnes.replace("\"", "");
+      coCnes = coCnes.replace("\"", "");
+      var razaoSocial = estabelecimentos[i].razaoSocial.replace("\"", "");
+      razaoSocial = razaoSocial.replace("\"", "");
       saida += '<tr>';
-      saida += '<td>' + estabelecimentos[i].coCnes + '</td>';
-      saida += '<td>' + estabelecimentos[i].razaoSocial + '</td>';
+      saida += '<td>' + coCnes + '</td>';
+      saida += '<td>' + razaoSocial + '</td>';
       saida += '</tr>';
       $("#conteudo").html(saida);
     }
