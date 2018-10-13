@@ -1,8 +1,11 @@
+h2, #pesquisa, #conteudo {
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
 #conteudo {
     border-collapse: collapse;
     width: 100%;
-    margin-left: 2%;
-    margin-top: 2%;
 }
 
 #conteudo td, #conteudo th {
