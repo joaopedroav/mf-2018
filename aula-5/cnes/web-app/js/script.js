@@ -4,12 +4,37 @@ $(document).ready(function () {
         var saida = '<tr><th>Código CNES</th><th>Razão social</th></tr>';
         var total = estabelecimentos.length;
         for (i = 0; i < 100; i++) {
+	    estabelecimentos[i].coCnes = estabelecimentos[i].coCnes.replace("\"", "");
+	    estabelecimentos[i].coCnes = estabelecimentos[i].coCnes.replace("\"", "");
+	    estabelecimentos[i].razaoSocial = estabelecimentos[i].razaoSocial.replace("\"", "");
+	    estabelecimentos[i].razaoSocial = estabelecimentos[i].razaoSocial.replace("\"", "");
             saida += '<tr>';
-            saida += '<td>' + estabelecimentos[i].coCnes + '</td>';
-            saida += '<td>' + estabelecimentos[i].razaoSocial + '</td>';
+	    saida += '<td>' + estabelecimentos[i].coCnes + '</td>';
+	    saida += '<td>' + estabelecimentos[i].razaoSocial + '</td>';            
             saida += '</tr>';
             $("#conteudo").html(saida);
         }
     });
     return false;
 });
+
+function pesquisar() {
+  var input, filter, table, tr, td, td2, i;
+  input = document.getElementById("pesquisa");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("conteudo");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    td2 = tr[i].getElementsByTagName("td")[1];
+    if (td || td2) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else if (td2.innerHTML.toUpperCase().indexOf(filter) > -1){
+	tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
