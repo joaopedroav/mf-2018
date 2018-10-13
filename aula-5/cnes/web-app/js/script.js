@@ -1,22 +1,24 @@
-$(document).ready(function () {
-  $.getJSON("estabelecimentos.json", function (data) {
-    var estabelecimentos = data;
-    var saida = '<tr><th>Código CNES</th><th>Razão social</th></tr>';
-    var total = estabelecimentos.length;
-    for (i = 0; i < 100; i++) {
-      var coCnes = estabelecimentos[i].coCnes.replace("\"", "");
+function generateTable(currentPage) {
+  this.URL = "estabelecimentos.json";
+  $.getJSON(URL, function (data) {
+    const pages = Math.ceil(50 / 10);
+    $("#conteudo, #paginacao").empty();
+    for (let i = currentPage * 10; i < (currentPage * 10) + 10; i++) {
+      let post = data[i];
+      var coCnes = post.coCnes.replace("\"", "");
       coCnes = coCnes.replace("\"", "");
-      var razaoSocial = estabelecimentos[i].razaoSocial.replace("\"", "");
+      var razaoSocial = post.razaoSocial.replace("\"", "");
       razaoSocial = razaoSocial.replace("\"", "");
-      saida += '<tr>';
-      saida += '<td>' + coCnes + '</td>';
-      saida += '<td>' + razaoSocial + '</td>';
-      saida += '</tr>';
-      $("#conteudo").html(saida);
+      let tblRow = "<tr>" + "<td>" + coCnes + "</td>" + "<td>" + razaoSocial + "</td>";
+      $(tblRow).appendTo("#conteudo");
     }
-  });
-  return false;
-});
+    for (let i = 1; i <= pages; i++) {
+      let pagingHtml = "<a href=# onclick=generateTable(" + (i - 1) + ")>" + " " + i + " " + "</a>"
+      $(pagingHtml).appendTo("#paginacao");
+    }
+  })
+}
+generateTable(0);
 
 function pesquisar() {
   var input, filter, table, tr, td, td2, i;
