@@ -4,12 +4,16 @@ function generateTable(currentPage) {
     const pages = Math.ceil(50 / 10);
     $("#conteudo, #paginacao").empty();
     for (let i = currentPage * 10; i < (currentPage * 10) + 10; i++) {
+      let tblRow = "";
       let post = data[i];
       var coCnes = post.coCnes.replace("\"", "");
       coCnes = coCnes.replace("\"", "");
       var razaoSocial = post.razaoSocial.replace("\"", "");
       razaoSocial = razaoSocial.replace("\"", "");
-      let tblRow = "<tr>" + "<td>" + coCnes + "</td>" + "<td>" + razaoSocial + "</td>";
+      if (i == currentPage * 10) {
+		tblRow += '<tr><th>Código CNES</th><th>Razão social</th></tr>';
+	  }
+      tblRow += "<tr>" + "<td>" + coCnes + "</td>" + "<td>" + razaoSocial + "</td>";
       $(tblRow).appendTo("#conteudo");
     }
     for (let i = 1; i <= pages; i++) {
