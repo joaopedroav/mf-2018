@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6">
+    <clr-datagrid [(clrDgSelected)]="selected">
+      <clr-dg-column>Código</clr-dg-column>
+      <clr-dg-column>Razão Social</clr-dg-column>
+
+      <clr-dg-row *clrDgItems="let est of estabelecimentos" [clrDgItem]="est">
+        <clr-dg-cell>{{est.coCnes}}</clr-dg-cell>
+        <clr-dg-cell>{{est.razaoSocial}}</clr-dg-cell>
+      </clr-dg-row>
+
+      <clr-dg-footer>
+        <clr-dg-pagination #pagination [clrDgPageSize]="10">
+          {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+          de {{pagination.totalItems}} estabelecimentos
+        </clr-dg-pagination>
+      </clr-dg-footer>
+    </clr-datagrid>
+  </div>
+  <!-- Selected users: <span *ngFor="let est of selected">{{user.username}}</span> -->
+  <div class="col-md-3">
+
+  </div>
+</div>
