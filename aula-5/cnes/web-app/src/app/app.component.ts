@@ -9,6 +9,7 @@ import { EstabelecimentosApiService } from './estabelecimentos-api.service';
 export class AppComponent implements OnInit {
 
   estabelecimentos = [];
+  coordenadas = [];
   pageSize = 10;
   lastPage;
   paginationEnabled = false;
@@ -31,6 +32,16 @@ export class AppComponent implements OnInit {
   loadEstabelecimentos() {
     this.service.getEstabelecimentos().subscribe(data => {
       this.estabelecimentos = data;
+      for (let i = 0; i < this.estabelecimentos.length; i++) {
+		let re = /\"/g;
+        this.coordenadas.push({
+          coCnes: this.estabelecimentos[i].coCnes.replace(re, ''),
+          razaoSocial: this.estabelecimentos[i].razaoSocial.replace(re, ''),
+          lat: this.estabelecimentos[i].lat.replace(re, ''),
+          lng: this.estabelecimentos[i].lng.replace(re, '')
+        });
+      }
     });
   }
+
 }

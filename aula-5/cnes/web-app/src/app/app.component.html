@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col-md-6">
-    <clr-datagrid [(clrDgSelected)]="selected">
+    <clr-datagrid [(clrDgSingleSelected)]="estSelec">
       <clr-dg-column>Código</clr-dg-column>
       <clr-dg-column>Razão Social</clr-dg-column>
 
-      <clr-dg-row *clrDgItems="let est of estabelecimentos" [clrDgItem]="est">
+      <clr-dg-row *clrDgItems="let est of coordenadas" [clrDgItem]="est">
         <clr-dg-cell>{{est.coCnes}}</clr-dg-cell>
         <clr-dg-cell>{{est.razaoSocial}}</clr-dg-cell>
       </clr-dg-row>
@@ -16,14 +16,15 @@
         </clr-dg-pagination>
       </clr-dg-footer>
     </clr-datagrid>
+    
   </div>
-  <!-- Selected users: <span *ngFor="let est of selected">{{est.lat}}</span> -->
+
   <div class="col-md-6">
+    <span *ngIf="estSelec">
     <agm-map [latitude]="latBr" [longitude]="lngBr" [zoom]="zoom">
-      <!-- <div *ngFor="let gw of gateways">
-        <agm-marker [latitude]="gw.lat" [longitude]="gw.lng">
+		<agm-marker [latitude]="estSelec.lat" [longitude]="estSelec.lng">
         </agm-marker>
-      </div> -->
     </agm-map>
+    </span>
   </div>
 </div>
