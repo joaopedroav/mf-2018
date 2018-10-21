@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-md-6">
     <clr-datagrid [(clrDgSingleSelected)]="estSelec">
-      <clr-dg-column>Código</clr-dg-column>
-      <clr-dg-column>Razão Social</clr-dg-column>
+      <clr-dg-column [clrDgField]="'coCnes'">Código</clr-dg-column>
+      <clr-dg-column [clrDgField]="'razaoSocial'">Razão Social</clr-dg-column>
 
       <clr-dg-row *clrDgItems="let est of coordenadas" [clrDgItem]="est">
         <clr-dg-cell>{{est.coCnes}}</clr-dg-cell>
