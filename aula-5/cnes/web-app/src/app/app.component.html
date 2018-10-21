@@ -1,6 +1,4 @@
 <div class="row">
-  <div class="col-md-3">
-  </div>
   <div class="col-md-6">
     <clr-datagrid [(clrDgSelected)]="selected">
       <clr-dg-column>Código</clr-dg-column>
@@ -19,8 +17,13 @@
       </clr-dg-footer>
     </clr-datagrid>
   </div>
-  <!-- Selected users: <span *ngFor="let est of selected">{{user.username}}</span> -->
-  <div class="col-md-3">
-
+  <!-- Selected users: <span *ngFor="let est of selected">{{est.lat}}</span> -->
+  <div class="col-md-6">
+    <agm-map [latitude]="latBr" [longitude]="lngBr" [zoom]="zoom">
+      <!-- <div *ngFor="let gw of gateways">
+        <agm-marker [latitude]="gw.lat" [longitude]="gw.lng">
+        </agm-marker>
+      </div> -->
+    </agm-map>
   </div>
 </div>

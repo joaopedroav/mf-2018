@@ -13,6 +13,9 @@ export class AppComponent implements OnInit {
   lastPage;
   paginationEnabled = false;
   selectedRows: any[];
+  zoom = 4;
+  latBr = -15.615861;
+  lngBr = -49.955067;
 
   constructor(private service: EstabelecimentosApiService) { }
 
