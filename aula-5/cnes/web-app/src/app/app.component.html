@@ -1,30 +1,50 @@
 <div class="row">
-  <div class="col-md-6">
-    <clr-datagrid [(clrDgSingleSelected)]="estSelec">
-      <clr-dg-column [clrDgField]="'coCnes'">Código</clr-dg-column>
-      <clr-dg-column [clrDgField]="'razaoSocial'">Razão Social</clr-dg-column>
+  <div class="col-md-1">
 
-      <clr-dg-row *clrDgItems="let est of coordenadas" [clrDgItem]="est">
-        <clr-dg-cell>{{est.coCnes}}</clr-dg-cell>
-        <clr-dg-cell>{{est.razaoSocial}}</clr-dg-cell>
-      </clr-dg-row>
+  </div>
+  <div class="col-md-5">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">Estabelecimentos CNES</h3>
+        <p class="card-text">
+          <clr-datagrid [(clrDgSingleSelected)]="estSelec">
+            <clr-dg-column [clrDgField]="'coCnes'">Código</clr-dg-column>
+            <clr-dg-column [clrDgField]="'razaoSocial'">Razão Social</clr-dg-column>
 
-      <clr-dg-footer>
-        <clr-dg-pagination #pagination [clrDgPageSize]="10">
-          {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
-          de {{pagination.totalItems}} estabelecimentos
-        </clr-dg-pagination>
-      </clr-dg-footer>
-    </clr-datagrid>
-    
+            <clr-dg-row *clrDgItems="let est of coordenadas" [clrDgItem]="est">
+              <clr-dg-cell>{{est.coCnes}}</clr-dg-cell>
+              <clr-dg-cell>{{est.razaoSocial}}</clr-dg-cell>
+            </clr-dg-row>
+
+            <clr-dg-footer>
+              <clr-dg-pagination #pagination [clrDgPageSize]="10">
+                {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+                de {{pagination.totalItems}} estabelecimentos
+              </clr-dg-pagination>
+            </clr-dg-footer>
+          </clr-datagrid>
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div class="col-md-6">
+  <div class="col-md-5">
     <span *ngIf="estSelec">
-    <agm-map [latitude]="latBr" [longitude]="lngBr" [zoom]="zoom">
-		<agm-marker [latitude]="estSelec.lat" [longitude]="estSelec.lng">
-        </agm-marker>
-    </agm-map>
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Localização</h3>
+          <p class="card-text">
+            <agm-map [latitude]="latBr" [longitude]="lngBr" [zoom]="zoom">
+              <agm-marker [latitude]="estSelec.lat" [longitude]="estSelec.lng">
+              </agm-marker>
+            </agm-map>
+          </p>
+        </div>
+      </div>
     </span>
+  </div>
+
+  <div class="col-md-1">
+
   </div>
 </div>
