@@ -20,6 +20,12 @@ sudo apt-get autoremove
 npm install
 ```
 
+- Instale o Angular
+
+```
+npm install -g @angular/cli
+```
+
 ## Executando
 
 ```
