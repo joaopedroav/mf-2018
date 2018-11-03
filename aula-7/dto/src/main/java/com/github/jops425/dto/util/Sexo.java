@@ -7,67 +7,67 @@ package com.github.jops425.dto.util;
  */
 public class Sexo {
 
-	/**
-	 * Código do sexo.
-	 */
-	private int codigo;
+    /**
+     * Código do sexo.
+     */
+    private int codigo;
 
-	/**
-	 * Descrição do sexo.
-	 */
-	private String descricao;
+    /**
+     * Descrição do sexo.
+     */
+    private String descricao;
 
-	/**
-	 * Valor alternativo.
-	 */
-	private String alternativo;
+    /**
+     * Valor alternativo.
+     */
+    private String alternativo;
 
-	/**
-	 * Getter para código.
-	 * @return O código.
-	 */
-	public int getCodigo() {
-		return codigo;
-	}
+    /**
+     * Getter para código.
+     * @return O código.
+     */
+    public final int getCodigo() {
+        return codigo;
+    }
 
-	/**
-	 * Setter para código.
-	 * @param codigo Código do sexo.
-	 */
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
-	}
+    /**
+     * Setter para código.
+     * @param cod Código do sexo.
+     */
+    public final void setCodigo(final int cod) {
+        this.codigo = cod;
+    }
 
-	/**
-	 * Getter para descrição.
-	 * @return descrição.
-	 */
-	public String getDescricao() {
-		return descricao;
-	}
+    /**
+     * Getter para descrição.
+     * @return descrição.
+     */
+    public final String getDescricao() {
+        return descricao;
+    }
 
-	/**
-	 * Setter para descrição.
-	 * @param descricao Descrição do sexo.
-	 */
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
+    /**
+     * Setter para descrição.
+     * @param descr Descrição do sexo.
+     */
+    public final void setDescricao(final String descr) {
+        this.descricao = descr;
+    }
 
-	/**
-	 * Getter para alternativo.
-	 * @return O valor 'alternativo'.
-	 */
-	public String getAlternativo() {
-		return alternativo;
-	}
+    /**
+     * Getter para alternativo.
+     * @return O valor 'alternativo'.
+     */
+    public final String getAlternativo() {
+        return alternativo;
+    }
 
-	/**
-	 * Setter para alternativo.
-	 * @param alternativo O valor 'alternativo'.
-	 */
-	public void setAlternativo(String alternativo) {
-		this.alternativo = alternativo;
-	}
+    /**
+     * Setter para alternativo.
+     * @param alt O valor 'alternativo'.
+     */
+    public final void setAlternativo(final String alt) {
+        this.alternativo = alt;
+    }
 
 }

@@ -21,32 +21,32 @@ public class NascimentoPluralidade {
 	 * Getter para código.
 	 * @return código.
 	 */
-	public int getCodigo() {
+	public final int getCodigo() {
 		return codigo;
 	}
 
 	/**
 	 * Setter para código.
-	 * @param codigo Código NP.
+	 * @param cod Código NP.
 	 */
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
+	public final void setCodigo(final int cod) {
+		this.codigo = cod;
 	}
 
 	/**
 	 * Getter para descrição.
 	 * @return descrição NP.
 	 */
-	public String getDescricao() {
+	public final String getDescricao() {
 		return descricao;
 	}
 
 	/**
 	 * Setter para descrição.
-	 * @param descricao Descrição NP.
+	 * @param des Descrição NP.
 	 */
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public final void setDescricao(final String des) {
+		this.descricao = des;
 	}
 
 }

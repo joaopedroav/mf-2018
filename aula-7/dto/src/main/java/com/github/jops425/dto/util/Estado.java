@@ -7,46 +7,46 @@ package com.github.jops425.dto.util;
  */
 public class Estado {
 
-	/**
-	 * Código.
-	 */
-	private String codigo;
+    /**
+     * Código.
+     */
+    private String codigo;
 
-	/**
-	 * Descrição.
-	 */
-	private String descricao;
+    /**
+     * Descrição.
+     */
+    private String descricao;
 
-	/**
-	 * Getter para código.
-	 * @return O código.
-	 */
-	public String getCodigo() {
-		return codigo;
-	}
+    /**
+     * Getter para código.
+     * @return O código.
+     */
+    public final String getCodigo() {
+        return codigo;
+    }
 
-	/**
-	 * Setter para código;
-	 * @param codigo O código.
-	 */
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
-	}
+    /**
+     * Setter para código.
+     * @param cod O código.
+     */
+    public final void setCodigo(final String cod) {
+        this.codigo = cod;
+    }
 
-	/**
-	 * Getter para descrição.
-	 * @return Descrição.
-	 */
-	public String getDescricao() {
-		return descricao;
-	}
+    /**
+     * Getter para descrição.
+     * @return Descrição.
+     */
+    public final String getDescricao() {
+        return descricao;
+    }
 
-	/**
-	 * Setter para descrição.
-	 * @param descricao A descrição.
-	 */
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
+    /**
+     * Setter para descrição.
+     * @param des A descrição.
+     */
+    public final void setDescricao(final String des) {
+        this.descricao = des;
+    }
 
 }

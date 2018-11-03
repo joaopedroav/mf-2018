@@ -21,32 +21,32 @@ public class NascimentoSeguimento {
 	 * Getter para código.
 	 * @return O código.
 	 */
-	public String getCodigo() {
+	public final String getCodigo() {
 		return codigo;
 	}
 
 	/**
-	 * Setter para código;
-	 * @param codigo O código.
+	 * Setter para código.
+	 * @param cod O código.
 	 */
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
+	public final void setCodigo(final String cod) {
+		this.codigo = cod;
 	}
 
 	/**
 	 * Getter para descrição.
 	 * @return Descrição NS.
 	 */
-	public String getDescricao() {
+	public final String getDescricao() {
 		return descricao;
 	}
 
 	/**
 	 * Setter para descrição.
-	 * @param descricao A descrição NS.
+	 * @param desc A descrição NS.
 	 */
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public final void setDescricao(final String desc) {
+		this.descricao = desc;
 	}
 
 }

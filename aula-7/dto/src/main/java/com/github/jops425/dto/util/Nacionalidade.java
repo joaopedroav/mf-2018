@@ -21,32 +21,32 @@ public class Nacionalidade {
 	 * Getter para código.
 	 * @return O código.
 	 */
-	public int getCodigo() {
+	public final int getCodigo() {
 		return codigo;
 	}
 
 	/**
-	 * Setter para código;
-	 * @param codigo O código.
+	 * Setter para código.
+	 * @param cod O código.
 	 */
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
+	public final void setCodigo(final int cod) {
+		this.codigo = cod;
 	}
 
 	/**
 	 * Getter para descrição.
 	 * @return Descrição.
 	 */
-	public String getDescricao() {
+	public final String getDescricao() {
 		return descricao;
 	}
 
 	/**
 	 * Setter para descrição.
-	 * @param descricao A descrição.
+	 * @param des A descrição.
 	 */
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public final void setDescricao(final String des) {
+		this.descricao = des;
 	}
 
 }

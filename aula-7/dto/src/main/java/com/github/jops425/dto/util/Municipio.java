@@ -26,47 +26,47 @@ public class Municipio {
 	 * Getter para código.
 	 * @return O código.
 	 */
-	public String getCodigo() {
+	public final String getCodigo() {
 		return codigo;
 	}
 
 	/** Setter para código.
-	 * @param codigo O código.
+	 * @param cod O código.
 	 */
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
+	public final void setCodigo(final String cod) {
+		this.codigo = cod;
 	}
 
 	/**
 	 * Getter para estado.
 	 * @return O estado.
 	 */
-	public String getEstado() {
+	public final String getEstado() {
 		return estado;
 	}
 
 	/**
 	 * Setter para estado.
-	 * @param estado O estado.
+	 * @param est O estado.
 	 */
-	public void setEstado(String estado) {
-		this.estado = estado;
+	public final void setEstado(final String est) {
+		this.estado = est;
 	}
 
 	/**
 	 * Getter para município.
 	 * @return O município.
 	 */
-	public String getMunicipio() {
+	public final String getMunicipio() {
 		return municipio;
 	}
 
 	/**
 	 * Setter para município.
-	 * @param municipio O município.
+	 * @param mun O município.
 	 */
-	public void setMunicipio(String municipio) {
-		this.municipio = municipio;
+	public final void setMunicipio(final String mun) {
+		this.municipio = mun;
 	}
 
 }
