@@ -1,4 +1,4 @@
-package com.github.jops425.dto;
+package com.github.jops425.dto.util;
 
 /**
  * Classe Raça.
@@ -48,4 +48,5 @@ public class Raca {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+	
 }

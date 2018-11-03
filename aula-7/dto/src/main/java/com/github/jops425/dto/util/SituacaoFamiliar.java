@@ -1,4 +1,4 @@
-package com.github.jops425.dto;
+package com.github.jops425.dto.util;
 
 /**
  * Classe situação familiar.

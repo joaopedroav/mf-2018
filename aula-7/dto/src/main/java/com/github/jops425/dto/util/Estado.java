@@ -1,4 +1,4 @@
-package com.github.jops425.dto;
+package com.github.jops425.dto.util;
 
 /**
  * Classe estado.
@@ -10,7 +10,7 @@ public class Estado {
 	/**
 	 * Código.
 	 */
-	private int codigo;
+	private String codigo;
 
 	/**
 	 * Descrição.
@@ -21,7 +21,7 @@ public class Estado {
 	 * Getter para código.
 	 * @return O código.
 	 */
-	public int getCodigo() {
+	public String getCodigo() {
 		return codigo;
 	}
 
@@ -29,7 +29,7 @@ public class Estado {
 	 * Setter para código;
 	 * @param codigo O código.
 	 */
-	public void setCodigo(int codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 
