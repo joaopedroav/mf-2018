@@ -8,23 +8,23 @@ package com.github.jops425.dto;
  */
 public interface DTO {
 
-	/**
-	 * Serializa json para objeto.
-	 */
-	void fromJson();
+    /**
+     * Serializa json para objeto.
+     */
+    void fromJson();
 
-	/**
-	 * Serializa objeto para json.
-	 */
-	void toJson();
+    /**
+     * Serializa objeto para json.
+     */
+    void toJson();
 
-	/**
-	 * Serializa xml para objeto.
-	 */
-	void fromXML();
+    /**
+     * Serializa xml para objeto.
+     */
+    void fromXML();
 
-	/**
-	 * Serializa objeto para xml.
-	 */
-	void toXML();
+    /**
+     * Serializa objeto para xml.
+     */
+    void toXML();
 }

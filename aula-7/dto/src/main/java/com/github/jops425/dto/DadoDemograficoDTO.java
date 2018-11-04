@@ -1,69 +1,154 @@
 package com.github.jops425.dto;
 
 import java.time.LocalDate;
+import com.github.jops425.dto.util.Individuo;
+import com.github.jops425.dto.util.NascimentoSeguimento;
+import com.github.jops425.dto.util.NascimentoPluralidade;
+import com.github.jops425.dto.util.ObitoFonte;
+import com.github.jops425.dto.util.Sexo;
+import com.github.jops425.dto.util.SituacaoFamiliar;
+import com.github.jops425.dto.util.Raca;
+import com.github.jops425.dto.util.Nacionalidade;
+import com.github.jops425.dto.util.Municipio;
+import com.github.jops425.dto.util.Estado;
+import com.github.jops425.dto.util.NascimentoOrdem;
+import com.github.jops425.dto.util.Pais;
 
+/**
+ * Classe Dado Demográfico DTO.
+ */
 public class DadoDemograficoDTO implements DTO {
 
-	private String individuo;
+    /**
+     * Indivíduo.
+     */
+    private Individuo individuo;
 
-	private LocalDate nascimento;
+    /**
+     * Data de nascimento.
+     */
+    private LocalDate nascimento;
 
-	private String nascimentoAcuracia;
+    /**
+     * Nascimento acurácia.
+     */
+    private String nascimentoAcuracia;
 
-	private int nascimentoPluralicade;
+    /**
+     * Data de seguimento.
+     */
+    private NascimentoSeguimento dataSeg;
 
-	private int nascimentoOrdem;
+    /**
+     * Nascimento pluralidade.
+     */
+    private NascimentoPluralidade nascPl;
 
-	private LocalDate obito;
+    /**
+     * Nascimento ordem.
+     */
+    private NascimentoOrdem nascOrdem;
 
-	private String obitoAcuracia;
+    /**
+     * Data de óbito.
+     */
+    private LocalDate obito;
 
-	private int obitoFonte;
+    /**
+     * Óbito acurácia.
+     */
+    private String obitoAcuracia;
 
-	private int sexo;
+    /**
+     * Óbito fonte.
+     */
+    private ObitoFonte obitoFonte;
 
-	private String mae;
+    /**
+     * Sexo.
+     */
+    private Sexo sexo;
 
-	private String pai;
+    /**
+     * Nome da mãe.
+     */
+    private String mae;
 
-	private int situacaoFamiliar;
+    /**
+     * Nome do pai.
+     */
+    private String pai;
 
-	private int raca;
+    /**
+     * Situação familiar.
+     */
+    private SituacaoFamiliar sitFam;
 
-	private String comentario;
+    /**
+     * Etnia.
+     */
+    private Raca raca;
 
-	private int nacionalidade;
+    /**
+     * Comentário.
+     */
+    private String comentario;
 
-	private int municipio;
+    /**
+     * Nacionalidade.
+     */
+    private Nacionalidade nacio;
 
-	private String estado;
+    /**
+     * Código do município.
+     */
+    private Municipio muni;
 
-	private int pais;
+    /**
+     * Código do estado.
+     */
+    private Estado estado;
 
-	private LocalDate dataEntradaPais;
+    /**
+     * Código do país.
+     */
+    private Pais pais;
 
-	@Override
-	public void fromJson() {
-		// TODO Auto-generated method stub
-		
-	}
+    /**
+     * Data de entrada no país.
+     */
+    private LocalDate dataEntradaPais;
 
-	@Override
-	public void toJson() {
-		// TODO Auto-generated method stub
-		
-	}
+    /**
+     * Método fromJson.
+     */
+    @Override
+    public void fromJson() {
+        // TODO Auto-generated method stub
+    }
 
-	@Override
-	public void fromXML() {
-		// TODO Auto-generated method stub
-		
-	}
+    /**
+     * Método toJson.
+     */
+    @Override
+    public void toJson() {
+        // TODO Auto-generated method stub
+    }
 
-	@Override
-	public void toXML() {
-		// TODO Auto-generated method stub
-		
-	}
+    /**
+     * Método fromXML.
+     */
+    @Override
+    public void fromXML() {
+        // TODO Auto-generated method stub
+    }
+
+    /**
+     * Método toXML.
+     */
+    @Override
+    public void toXML() {
+        // TODO Auto-generated method stub
+    }
 
 }
