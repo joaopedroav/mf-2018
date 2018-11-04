@@ -7,46 +7,46 @@ package com.github.jops425.dto.util;
  */
 public class NascimentoOrdem {
 
-	/**
-	 * Código NO.
-	 */
-	private int codigo;
+    /**
+     * Código NO.
+     */
+    private int codigo;
 
-	/**
-	 * Descrição NO.
-	 */
-	private String descricao;
+    /**
+     * Descrição NO.
+     */
+    private String descricao;
 
-	/**
-	 * Getter para código.
-	 * @return O código.
-	 */
-	public final int getCodigo() {
-		return codigo;
-	}
+    /**
+     * Getter para código.
+     * @return O código.
+     */
+    public final int getCodigo() {
+        return codigo;
+    }
 
-	/**
-	 * Setter para código.
-	 * @param cod O código.
-	 */
-	public final void setCodigo(final int cod) {
-		this.codigo = cod;
-	}
+    /**
+     * Setter para código.
+     * @param cod O código.
+     */
+    public final void setCodigo(final int cod) {
+        this.codigo = cod;
+    }
 
-	/**
-	 * Getter para descrição.
-	 * @return Descrição NO.
-	 */
-	public final String getDescricao() {
-		return descricao;
-	}
+    /**
+     * Getter para descrição.
+     * @return Descrição NO.
+     */
+    public final String getDescricao() {
+        return descricao;
+    }
 
-	/**
-	 * Setter para descrição.
-	 * @param desc A descrição NO.
-	 */
-	public final void setDescricao(final String desc) {
-		this.descricao = desc;
-	}
+    /**
+     * Setter para descrição.
+     * @param desc A descrição NO.
+     */
+    public final void setDescricao(final String desc) {
+        this.descricao = desc;
+    }
 
 }

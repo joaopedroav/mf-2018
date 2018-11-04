@@ -7,46 +7,46 @@ package com.github.jops425.dto.util;
  */
 public class Nacionalidade {
 
-	/**
-	 * Código.
-	 */
-	private int codigo;
+    /**
+     * Código.
+     */
+    private int codigo;
 
-	/**
-	 * Descrição.
-	 */
-	private String descricao;
+    /**
+     * Descrição.
+     */
+    private String descricao;
 
-	/**
-	 * Getter para código.
-	 * @return O código.
-	 */
-	public final int getCodigo() {
-		return codigo;
-	}
+    /**
+     * Getter para código.
+     * @return O código.
+     */
+    public final int getCodigo() {
+        return codigo;
+    }
 
-	/**
-	 * Setter para código.
-	 * @param cod O código.
-	 */
-	public final void setCodigo(final int cod) {
-		this.codigo = cod;
-	}
+    /**
+     * Setter para código.
+     * @param cod O código.
+     */
+    public final void setCodigo(final int cod) {
+        this.codigo = cod;
+    }
 
-	/**
-	 * Getter para descrição.
-	 * @return Descrição.
-	 */
-	public final String getDescricao() {
-		return descricao;
-	}
+    /**
+     * Getter para descrição.
+     * @return Descrição.
+     */
+    public final String getDescricao() {
+        return descricao;
+    }
 
-	/**
-	 * Setter para descrição.
-	 * @param des A descrição.
-	 */
-	public final void setDescricao(final String des) {
-		this.descricao = des;
-	}
+    /**
+     * Setter para descrição.
+     * @param des A descrição.
+     */
+    public final void setDescricao(final String des) {
+        this.descricao = des;
+    }
 
 }
