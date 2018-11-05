@@ -1,18 +1,6 @@
 package com.github.jops425.dto;
 
 import java.time.LocalDate;
-import com.github.jops425.dto.util.Individuo;
-import com.github.jops425.dto.util.NascimentoSeguimento;
-import com.github.jops425.dto.util.NascimentoPluralidade;
-import com.github.jops425.dto.util.ObitoFonte;
-import com.github.jops425.dto.util.Sexo;
-import com.github.jops425.dto.util.SituacaoFamiliar;
-import com.github.jops425.dto.util.Raca;
-import com.github.jops425.dto.util.Nacionalidade;
-import com.github.jops425.dto.util.Municipio;
-import com.github.jops425.dto.util.Estado;
-import com.github.jops425.dto.util.NascimentoOrdem;
-import com.github.jops425.dto.util.Pais;
 
 /**
  * Classe Dado Demográfico DTO.
@@ -22,7 +10,7 @@ public class DadoDemograficoDTO implements DTO {
     /**
      * Indivíduo.
      */
-    private Individuo individuo;
+    // private Individuo individuo;
 
     /**
      * Data de nascimento.
@@ -37,17 +25,17 @@ public class DadoDemograficoDTO implements DTO {
     /**
      * Data de seguimento.
      */
-    private NascimentoSeguimento dataSeg;
+    private String nascSeg;
 
     /**
      * Nascimento pluralidade.
      */
-    private NascimentoPluralidade nascPl;
+    private int nascPl;
 
     /**
      * Nascimento ordem.
      */
-    private NascimentoOrdem nascOrdem;
+    private int nascOrdem;
 
     /**
      * Data de óbito.
@@ -62,12 +50,12 @@ public class DadoDemograficoDTO implements DTO {
     /**
      * Óbito fonte.
      */
-    private ObitoFonte obitoFonte;
+    private int obitoFonte;
 
     /**
      * Sexo.
      */
-    private Sexo sexo;
+    private int sexo;
 
     /**
      * Nome da mãe.
@@ -82,12 +70,12 @@ public class DadoDemograficoDTO implements DTO {
     /**
      * Situação familiar.
      */
-    private SituacaoFamiliar sitFam;
+    private int situacaoFamiliar;
 
     /**
      * Etnia.
      */
-    private Raca raca;
+    private int raca;
 
     /**
      * Comentário.
@@ -97,22 +85,22 @@ public class DadoDemograficoDTO implements DTO {
     /**
      * Nacionalidade.
      */
-    private Nacionalidade nacio;
+    private int nacio;
 
     /**
      * Código do município.
      */
-    private Municipio muni;
+    private int municipio;
 
     /**
      * Código do estado.
      */
-    private Estado estado;
+    private int estado;
 
     /**
      * Código do país.
      */
-    private Pais pais;
+    private int pais;
 
     /**
      * Data de entrada no país.
