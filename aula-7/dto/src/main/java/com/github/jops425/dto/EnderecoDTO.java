@@ -1,45 +1,32 @@
 package com.github.jops425.dto;
 
+import java.time.LocalDate;
+
 /**
  * @author João
  *
  */
-public class EnderecoDTO implements DTO {
+public class EnderecoDTO {
 
-    /* (non-Javadoc)
-     * @see com.github.jops425.dto.DTO#fromJson()
-     */
-    @Override
-    public void fromJson() {
-        // TODO Auto-generated method stub
-        
-    }
+    private String ordem;
 
-    /* (non-Javadoc)
-     * @see com.github.jops425.dto.DTO#toJson()
-     */
-    @Override
-    public void toJson() {
-        // TODO Auto-generated method stub
-        
-    }
+    private String linha;
 
-    /* (non-Javadoc)
-     * @see com.github.jops425.dto.DTO#fromXML()
-     */
-    @Override
-    public void fromXML() {
-        // TODO Auto-generated method stub
-        
-    }
+    private String bairro;
 
-    /* (non-Javadoc)
-     * @see com.github.jops425.dto.DTO#toXML()
-     */
-    @Override
-    public void toXML() {
-        // TODO Auto-generated method stub
-        
-    }
+    private String distrito;
 
+    private int codigoMunicipio;
+
+    private String cep;
+
+    private String caixaPostal;
+
+    private String pais;
+
+    private String tipo;
+
+    private LocalDate data;
+
+    private String acuracia;
 }
