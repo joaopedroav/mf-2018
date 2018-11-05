@@ -25,17 +25,17 @@ public class DadoDemograficoDTO implements DTO {
     /**
      * Data de seguimento.
      */
-    private String nascSeg;
+    private String nascimentoSeg;
 
     /**
      * Nascimento pluralidade.
      */
-    private int nascPl;
+    private int nascimentoPl;
 
     /**
      * Nascimento ordem.
      */
-    private int nascOrdem;
+    private int nascimentoOrdem;
 
     /**
      * Data de óbito.
@@ -85,7 +85,7 @@ public class DadoDemograficoDTO implements DTO {
     /**
      * Nacionalidade.
      */
-    private int nacio;
+    private int nacionalidade;
 
     /**
      * Código do município.
