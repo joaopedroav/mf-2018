@@ -9,4 +9,12 @@ package com.github.jops425.dto;
  */
 public class ComunicacaoDTO {
 
+    private String meio;
+
+    private String preferencia;
+
+    private String detalhe;
+
+    private String uso;
+
 }
