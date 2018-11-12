@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class VinculoDTO {
 
-    private Individuo id;
+    private IndividuoDTO id;
 
     private String relacionamento;
 
@@ -17,7 +17,7 @@ public class VinculoDTO {
      *
      * @return Variavel id.
      */
-    public Individuo getId() {
+    public IndividuoDTO getId() {
         return id;
     }
 
@@ -26,7 +26,7 @@ public class VinculoDTO {
      *
      * @param id Variável id a ser editada.
      */
-    public void setId(Individuo id) {
+    public void setId(IndividuoDTO id) {
         this.id = id;
     }
 

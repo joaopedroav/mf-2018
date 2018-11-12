@@ -10,7 +10,7 @@ public class DadoDemograficoDTO {
     /**
      * Indivíduo.
      */
-    private Individuo individuo;
+    private IndividuoDTO individuo;
 
     /**
      * Data de nascimento.
@@ -112,7 +112,7 @@ public class DadoDemograficoDTO {
      *
      * @return Variavel individuo.
      */
-    public Individuo getIndividuo() {
+    public IndividuoDTO getIndividuo() {
         return individuo;
     }
 
@@ -121,7 +121,7 @@ public class DadoDemograficoDTO {
      *
      * @param individuo Variável individuo a ser editada.
      */
-    public void setIndividuo(Individuo individuo) {
+    public void setIndividuo(IndividuoDTO individuo) {
         this.individuo = individuo;
     }
 

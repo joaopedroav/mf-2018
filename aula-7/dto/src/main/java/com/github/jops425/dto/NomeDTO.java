@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class NomeDTO {
 
-    private Individuo id;
+    private IndividuoDTO id;
 
 	private String titulos;
 
@@ -33,7 +33,7 @@ public class NomeDTO {
      *
      * @return Variavel id.
      */
-    public Individuo getId() {
+    public IndividuoDTO getId() {
         return id;
     }
 
@@ -42,7 +42,7 @@ public class NomeDTO {
      *
      * @param id Variável id a ser editada.
      */
-    public void setId(Individuo id) {
+    public void setId(IndividuoDTO id) {
         this.id = id;
     }
 

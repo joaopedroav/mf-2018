@@ -6,7 +6,7 @@ package com.github.jops425.dto;
  */
 public class ComunicacaoDTO {
 
-    private Individuo id;
+    private IndividuoDTO id;
 
     private String meio;
 
@@ -21,7 +21,7 @@ public class ComunicacaoDTO {
      *
      * @return Variavel id.
      */
-    public Individuo getId() {
+    public IndividuoDTO getId() {
         return id;
     }
 
@@ -30,7 +30,7 @@ public class ComunicacaoDTO {
      *
      * @param id Variável id a ser editada.
      */
-    public void setId(Individuo id) {
+    public void setId(IndividuoDTO id) {
         this.id = id;
     }
 

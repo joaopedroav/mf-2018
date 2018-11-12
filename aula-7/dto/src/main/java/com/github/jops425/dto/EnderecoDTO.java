@@ -8,7 +8,7 @@ import java.time.LocalDate;
  */
 public class EnderecoDTO {
 
-    private Individuo id;
+    private IndividuoDTO id;
 
     private String ordem;
 
@@ -37,7 +37,7 @@ public class EnderecoDTO {
      *
      * @return Variavel id.
      */
-    public Individuo getId() {
+    public IndividuoDTO getId() {
         return id;
     }
 
@@ -46,7 +46,7 @@ public class EnderecoDTO {
      *
      * @param id Variável id a ser editada.
      */
-    public void setId(Individuo id) {
+    public void setId(IndividuoDTO id) {
         this.id = id;
     }
 

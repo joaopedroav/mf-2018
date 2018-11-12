@@ -1,6 +1,6 @@
 package com.github.jops425.dto;
 
-public class Individuo {
+public class IndividuoDTO {
 
 	private String id;
 

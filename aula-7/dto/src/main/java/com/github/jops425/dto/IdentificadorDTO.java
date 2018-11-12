@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class IdentificadorDTO {
 
-    private Individuo id;
+    private IndividuoDTO id;
 
     private String designacao;
 
@@ -39,7 +39,7 @@ public class IdentificadorDTO {
      *
      * @return Variavel id.
      */
-    public Individuo getId() {
+    public IndividuoDTO getId() {
         return id;
     }
 
@@ -48,7 +48,7 @@ public class IdentificadorDTO {
      *
      * @param id Variável id a ser editada.
      */
-    public void setId(Individuo id) {
+    public void setId(IndividuoDTO id) {
         this.id = id;
     }
 
