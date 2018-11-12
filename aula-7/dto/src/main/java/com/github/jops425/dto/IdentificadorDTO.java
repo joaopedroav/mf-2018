@@ -2,7 +2,7 @@ package com.github.jops425.dto;
 
 import java.time.LocalDate;
 
-public class IdentificadorDTO implements DTO {
+public class IdentificadorDTO {
 
     private Individuo id;
 
@@ -303,29 +303,5 @@ public class IdentificadorDTO implements DTO {
     public void setZonaTitulo(String zonaTitulo) {
         this.zonaTitulo = zonaTitulo;
     }
-
-    @Override
-	public void fromJson() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void toJson() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void fromXML() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void toXML() {
-		// TODO Auto-generated method stub
-		
-	}
 
 }

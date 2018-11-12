@@ -6,7 +6,7 @@ import java.time.LocalDate;
  * @author João
  *
  */
-public class EnderecoDTO implements DTO {
+public class EnderecoDTO {
 
     private Individuo id;
 
@@ -248,27 +248,5 @@ public class EnderecoDTO implements DTO {
         this.acuracia = acuracia;
     }
 
-    @Override
-	public void fromJson() {
-		// TODO Auto-generated method stub
-		
-	}
 
-	@Override
-	public void toJson() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void fromXML() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void toXML() {
-		// TODO Auto-generated method stub
-		
-	}
 }

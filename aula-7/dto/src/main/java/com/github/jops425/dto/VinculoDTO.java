@@ -2,7 +2,7 @@ package com.github.jops425.dto;
 
 import java.time.LocalDate;
 
-public class VinculoDTO implements DTO {
+public class VinculoDTO {
 
     private Individuo id;
 
@@ -84,27 +84,4 @@ public class VinculoDTO implements DTO {
         this.dataFim = dataFim;
     }
 
-    @Override
-	public void fromJson() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void toJson() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void fromXML() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void toXML() {
-		// TODO Auto-generated method stub
-		
-	}
 }

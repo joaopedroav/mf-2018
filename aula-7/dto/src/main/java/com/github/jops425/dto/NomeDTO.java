@@ -2,7 +2,7 @@ package com.github.jops425.dto;
 
 import java.time.LocalDate;
 
-public class NomeDTO implements DTO {
+public class NomeDTO {
 
     private Individuo id;
 
@@ -243,29 +243,5 @@ public class NomeDTO implements DTO {
     public void setAlternativa(String alternativa) {
         this.alternativa = alternativa;
     }
-
-    @Override
-	public void fromJson() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void toJson() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void fromXML() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void toXML() {
-		// TODO Auto-generated method stub
-		
-	}
 
 }

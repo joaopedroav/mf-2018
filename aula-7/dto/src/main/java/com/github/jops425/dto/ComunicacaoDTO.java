@@ -1,13 +1,10 @@
-/**
- *
- */
 package com.github.jops425.dto;
 
 /**
  * @author aluno
  *
  */
-public class ComunicacaoDTO implements DTO {
+public class ComunicacaoDTO {
 
     private Individuo id;
 
@@ -109,28 +106,5 @@ public class ComunicacaoDTO implements DTO {
         this.uso = uso;
     }
 
-    @Override
-	public void fromJson() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void toJson() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void fromXML() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void toXML() {
-		// TODO Auto-generated method stub
-		
-	}
 
 }

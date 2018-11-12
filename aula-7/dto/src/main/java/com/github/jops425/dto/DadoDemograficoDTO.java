@@ -5,7 +5,7 @@ import java.time.LocalDate;
 /**
  * Classe Dado Demográfico DTO.
  */
-public class DadoDemograficoDTO implements DTO {
+public class DadoDemograficoDTO {
 
     /**
      * Indivíduo.
@@ -465,38 +465,6 @@ public class DadoDemograficoDTO implements DTO {
      */
     public void setDataEntradaPais(LocalDate dataEntradaPais) {
         this.dataEntradaPais = dataEntradaPais;
-    }
-
-    /**
-     * Método fromJson.
-     */
-    @Override
-    public void fromJson() {
-        // TODO Auto-generated method stub
-    }
-
-    /**
-     * Método toJson.
-     */
-    @Override
-    public void toJson() {
-        // TODO Auto-generated method stub
-    }
-
-    /**
-     * Método fromXML.
-     */
-    @Override
-    public void fromXML() {
-        // TODO Auto-generated method stub
-    }
-
-    /**
-     * Método toXML.
-     */
-    @Override
-    public void toXML() {
-        // TODO Auto-generated method stub
     }
 
 }
