@@ -12,7 +12,79 @@ public class VinculoDTO implements DTO {
 
     private LocalDate dataFim;
 
-	@Override
+	/**
+     * Getter para id.
+     *
+     * @return Variavel id.
+     */
+    public Individuo getId() {
+        return id;
+    }
+
+    /**
+     * Setter para id.
+     *
+     * @param id Variável id a ser editada.
+     */
+    public void setId(Individuo id) {
+        this.id = id;
+    }
+
+    /**
+     * Getter para relacionamento.
+     *
+     * @return Variavel relacionamento.
+     */
+    public String getRelacionamento() {
+        return relacionamento;
+    }
+
+    /**
+     * Setter para relacionamento.
+     *
+     * @param relacionamento Variável relacionamento a ser editada.
+     */
+    public void setRelacionamento(String relacionamento) {
+        this.relacionamento = relacionamento;
+    }
+
+    /**
+     * Getter para dataInicio.
+     *
+     * @return Variavel dataInicio.
+     */
+    public LocalDate getDataInicio() {
+        return dataInicio;
+    }
+
+    /**
+     * Setter para dataInicio.
+     *
+     * @param dataInicio Variável dataInicio a ser editada.
+     */
+    public void setDataInicio(LocalDate dataInicio) {
+        this.dataInicio = dataInicio;
+    }
+
+    /**
+     * Getter para dataFim.
+     *
+     * @return Variavel dataFim.
+     */
+    public LocalDate getDataFim() {
+        return dataFim;
+    }
+
+    /**
+     * Setter para dataFim.
+     *
+     * @param dataFim Variável dataFim a ser editada.
+     */
+    public void setDataFim(LocalDate dataFim) {
+        this.dataFim = dataFim;
+    }
+
+    @Override
 	public void fromJson() {
 		// TODO Auto-generated method stub
 		
