@@ -7,7 +7,9 @@ package com.github.jops425.dto;
  * @author aluno
  *
  */
-public class ComunicacaoDTO {
+public class ComunicacaoDTO implements DTO {
+
+    private Individuo id;
 
     private String meio;
 
@@ -16,5 +18,29 @@ public class ComunicacaoDTO {
     private String detalhe;
 
     private String uso;
+
+	@Override
+	public void fromJson() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void toJson() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fromXML() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void toXML() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

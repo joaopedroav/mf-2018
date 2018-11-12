@@ -6,7 +6,9 @@ import java.time.LocalDate;
  * @author João
  *
  */
-public class EnderecoDTO {
+public class EnderecoDTO implements DTO {
+
+    private Individuo id;
 
     private String ordem;
 
@@ -29,4 +31,28 @@ public class EnderecoDTO {
     private LocalDate data;
 
     private String acuracia;
+
+	@Override
+	public void fromJson() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void toJson() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fromXML() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void toXML() {
+		// TODO Auto-generated method stub
+		
+	}
 }

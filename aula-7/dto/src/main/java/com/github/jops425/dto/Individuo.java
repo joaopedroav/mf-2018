@@ -1,16 +1,8 @@
 package com.github.jops425.dto;
 
-import java.time.LocalDate;
+public class Individuo implements DTO {
 
-public class VinculoDTO implements DTO {
-
-    private Individuo id;
-
-    private String relacionamento;
-
-    private LocalDate dataInicio;
-
-    private LocalDate dataFim;
+	private String id;
 
 	@Override
 	public void fromJson() {
@@ -35,4 +27,5 @@ public class VinculoDTO implements DTO {
 		// TODO Auto-generated method stub
 		
 	}
+
 }

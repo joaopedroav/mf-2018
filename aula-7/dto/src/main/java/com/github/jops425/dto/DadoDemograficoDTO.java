@@ -10,7 +10,7 @@ public class DadoDemograficoDTO implements DTO {
     /**
      * Indivíduo.
      */
-    // private Individuo individuo;
+    private Individuo individuo;
 
     /**
      * Data de nascimento.
