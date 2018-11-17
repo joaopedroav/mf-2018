@@ -6,7 +6,7 @@ import com.github.jops425.dto.models.Nome;
 
 public class Nomes {
 
-    private ArrayList<Nome> nomes = new ArrayList<Nome>();
+    private ArrayList<Nome> nomes;
 
     /**
      * Getter para nomes.

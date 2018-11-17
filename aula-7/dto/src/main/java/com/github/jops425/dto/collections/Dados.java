@@ -6,7 +6,7 @@ import com.github.jops425.dto.models.DadoDemografico;
 
 public class Dados {
 
-	private ArrayList<DadoDemografico> dados = new ArrayList<DadoDemografico>();
+	private ArrayList<DadoDemografico> dados;
 
 	/**
 	 * Getter para dados.

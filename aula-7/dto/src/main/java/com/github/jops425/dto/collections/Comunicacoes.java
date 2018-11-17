@@ -6,7 +6,7 @@ import com.github.jops425.dto.models.Comunicacao;
 
 public class Comunicacoes {
 
-	private ArrayList<Comunicacao> comunicacoes = new ArrayList<Comunicacao>();
+	private ArrayList<Comunicacao> comunicacoes;
 
 	/**
 	 * Getter para comunicacoes.

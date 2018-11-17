@@ -6,7 +6,7 @@ import com.github.jops425.dto.models.Endereco;
 
 public class Enderecos {
 
-    private ArrayList<Endereco> enderecos = new ArrayList<Endereco>();
+    private ArrayList<Endereco> enderecos;
 
     /**
      * Getter para enderecos.

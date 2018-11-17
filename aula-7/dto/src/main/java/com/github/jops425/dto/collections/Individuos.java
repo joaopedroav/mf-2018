@@ -6,7 +6,7 @@ import com.github.jops425.dto.models.Individuo;
 
 public class Individuos {
 
-    private ArrayList<Individuo> individuos = new ArrayList<Individuo>();
+    private ArrayList<Individuo> individuos;
 
     /**
      * Getter para individuos.

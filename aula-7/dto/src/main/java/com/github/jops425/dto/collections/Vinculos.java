@@ -6,7 +6,7 @@ import com.github.jops425.dto.models.Vinculo;
 
 public class Vinculos {
 
-    private ArrayList<Vinculo> vincs = new ArrayList<Vinculo>();
+    private ArrayList<Vinculo> vincs;
 
     /**
      * Getter para vincs.

@@ -6,7 +6,7 @@ import com.github.jops425.dto.models.Identificador;
 
 public class Identificadores {
 
-    private ArrayList<Identificador> identificadores = new ArrayList<Identificador>();
+    private ArrayList<Identificador> identificadores;
 
     /**
      * Getter para identificadores.
