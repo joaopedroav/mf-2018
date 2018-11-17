@@ -259,3 +259,5 @@ class SortByInst implements Comparator<Estado> {
         return est2.getNumInst() - est1.getNumInst();
     }
 }
+
+
