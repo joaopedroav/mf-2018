@@ -1,29 +1,36 @@
 package com.github.jops425.dto;
 
 import java.util.ArrayList;
+import com.github.jops425.dto.models.Comunicacao;
+import com.github.jops425.dto.models.DadoDemografico;
+import com.github.jops425.dto.models.Endereco;
+import com.github.jops425.dto.models.Identificador;
+import com.github.jops425.dto.models.Individuo;
+import com.github.jops425.dto.models.Nome;
+import com.github.jops425.dto.models.Vinculo;
 
 public class Colecao {
 
-    private static ArrayList<ComunicacaoDTO> comunicacoes;
+    private static ArrayList<Comunicacao> comunicacoes;
 
-    private static ArrayList<DadoDemograficoDTO> dados;
+    private static ArrayList<DadoDemografico> dados;
 
-    private static ArrayList<EnderecoDTO> enderecos;
+    private static ArrayList<Endereco> enderecos;
 
-    private static ArrayList<IdentificadorDTO> identificadores;
+    private static ArrayList<Identificador> identificadores;
 
-    private static ArrayList<IndividuoDTO> individuos;
+    private static ArrayList<Individuo> individuos;
 
-    private static ArrayList<NomeDTO> nomes;
+    private static ArrayList<Nome> nomes;
 
-    private static ArrayList<VinculoDTO> vinculos;
+    private static ArrayList<Vinculo> vinculos;
 
     /**
      * Getter para comunicacoes.
      *
      * @return Variavel comunicacoes.
      */
-    public static ArrayList<ComunicacaoDTO> getComunicacoes() {
+    public static ArrayList<Comunicacao> getComunicacoes() {
         return comunicacoes;
     }
 
@@ -32,7 +39,7 @@ public class Colecao {
      *
      * @param comunic Variável comunicacoes a ser editada.
      */
-    public static void setComunicacoes(ArrayList<ComunicacaoDTO> comunic) {
+    public static void setComunicacoes(ArrayList<Comunicacao> comunic) {
         comunicacoes = comunic;
     }
 
@@ -41,7 +48,7 @@ public class Colecao {
      *
      * @return Variavel dados.
      */
-    public static ArrayList<DadoDemograficoDTO> getDados() {
+    public static ArrayList<DadoDemografico> getDados() {
         return dados;
     }
 
@@ -50,7 +57,7 @@ public class Colecao {
      *
      * @param dado Variável dados a ser editada.
      */
-    public static void setDados(ArrayList<DadoDemograficoDTO> dado) {
+    public static void setDados(ArrayList<DadoDemografico> dado) {
         dados = dado;
     }
 
@@ -59,7 +66,7 @@ public class Colecao {
      *
      * @return Variavel enderecos.
      */
-    public static ArrayList<EnderecoDTO> getEnderecos() {
+    public static ArrayList<Endereco> getEnderecos() {
         return enderecos;
     }
 
@@ -68,7 +75,7 @@ public class Colecao {
      *
      * @param enderec Variável enderecos a ser editada.
      */
-    public static void setEnderecos(ArrayList<EnderecoDTO> enderec) {
+    public static void setEnderecos(ArrayList<Endereco> enderec) {
         enderecos = enderec;
     }
 
@@ -77,7 +84,7 @@ public class Colecao {
      *
      * @return Variavel identificadores.
      */
-    public ArrayList<IdentificadorDTO> getIdentificadores() {
+    public ArrayList<Identificador> getIdentificadores() {
         return identificadores;
     }
 
@@ -86,7 +93,7 @@ public class Colecao {
      *
      * @param ident Variável identificadores a ser editada.
      */
-    public static void setIdentificadores(ArrayList<IdentificadorDTO> ident) {
+    public static void setIdentificadores(ArrayList<Identificador> ident) {
         identificadores = ident;
     }
 
@@ -95,7 +102,7 @@ public class Colecao {
      *
      * @return Variavel individuos.
      */
-    public static ArrayList<IndividuoDTO> getIndividuos() {
+    public static ArrayList<Individuo> getIndividuos() {
         return individuos;
     }
 
@@ -104,7 +111,7 @@ public class Colecao {
      *
      * @param individ Variável individuos a ser editada.
      */
-    public static void setIndividuos(ArrayList<IndividuoDTO> individ) {
+    public static void setIndividuos(ArrayList<Individuo> individ) {
         individuos = individ;
     }
 
@@ -113,7 +120,7 @@ public class Colecao {
      *
      * @return Variavel nomes.
      */
-    public ArrayList<NomeDTO> getNomes() {
+    public ArrayList<Nome> getNomes() {
         return nomes;
     }
 
@@ -122,7 +129,7 @@ public class Colecao {
      *
      * @param nom Variável nomes a ser editada.
      */
-    public static void setNomes(ArrayList<NomeDTO> nom) {
+    public static void setNomes(ArrayList<Nome> nom) {
         nomes = nom;
     }
 
@@ -131,7 +138,7 @@ public class Colecao {
      *
      * @return Variavel vinculos.
      */
-    public static ArrayList<VinculoDTO> getVinculos() {
+    public static ArrayList<Vinculo> getVinculos() {
         return vinculos;
     }
 
@@ -140,7 +147,7 @@ public class Colecao {
      *
      * @param vinc Variável vinculos a ser editada.
      */
-    public static void setVinculos(ArrayList<VinculoDTO> vinc) {
+    public static void setVinculos(ArrayList<Vinculo> vinc) {
         vinculos = vinc;
     }
 
