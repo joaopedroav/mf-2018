@@ -155,7 +155,7 @@
                 <version>1.1.10</version>
                 <configuration>
                     <targetClasses>
-                        <param>com.github.jops425.dto.Main</param>
+                        <param>com.github.jops425.dto.*</param>
                     </targetClasses>
                     <targetTests>
                         <param>com.github.jops425.dto.*</param>

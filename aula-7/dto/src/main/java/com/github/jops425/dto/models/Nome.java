@@ -33,7 +33,7 @@ public class Nome {
      *
      * @return Variavel id.
      */
-    public IndividuoDTO getId() {
+    public Individuo getId() {
         return id;
     }
 
@@ -42,7 +42,7 @@ public class Nome {
      *
      * @param id Variável id a ser editada.
      */
-    public void setId(IndividuoDTO id) {
+    public void setId(Individuo id) {
         this.id = id;
     }
 
