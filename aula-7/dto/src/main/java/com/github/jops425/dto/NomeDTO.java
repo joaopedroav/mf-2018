@@ -18,6 +18,11 @@ import com.google.gson.GsonBuilder;
 
 public class NomeDTO {
 
+    /**
+     * Método fromJson.
+     * @param arquivo
+     * @return
+     */
     public Nomes fromJson(final String arquivo) {
         Gson gson = new Gson();
         Nomes nomes = gson.fromJson(arquivo, Nomes.class);

@@ -17,23 +17,48 @@ import com.github.jops425.dto.models.Individuo;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+/**
+ * Classe IndividuoDTO.
+ *
+ * @author aluno
+ *
+ */
 public class IndividuoDTO {
 
-    public Individuos fromJson(final String arquivo) {
+    /**
+     * Método fromJson.
+     * @param arquivo Caminho do arquivo.
+     * @return Lista de indivíduos.
+     */
+    public final Individuos fromJson(final String arquivo) {
         Gson gson = new Gson();
         Individuos coms = gson.fromJson(arquivo, Individuos.class);
         return coms;
     }
 
-    public void toJson(
-            final Individuos inds, String caminho) {
+    /**
+     * Método toJson.
+     *
+     * @param inds Lista de indivíduos.
+     * @param caminho Caminho do arquivo.
+     */
+    public final void toJson(
+            final Individuos inds, final String caminho) {
         try (Writer writer = new FileWriter(caminho)) {
             Gson gson = new GsonBuilder().create();
             gson.toJson(inds, writer);
         } catch (Exception e) { }
     }
 
-    public Individuos fromXML(final String arquivo)
+    /**
+     * Método fromXML.
+     *
+     * @param arquivo Caminho do arquivo.
+     * @return Lista de indivíduos.
+     * @throws FileNotFoundException Exceção.
+     * @throws JAXBException Exceção.
+     */
+    public final Individuos fromXML(final String arquivo)
             throws FileNotFoundException, JAXBException {
         JAXBContext context = JAXBContext.newInstance(Individuos.class);
         Unmarshaller un = context.createUnmarshaller();
@@ -41,7 +66,13 @@ public class IndividuoDTO {
         return inds;
     }
 
-    public void toXML(final Individuo i1) throws JAXBException {
+    /**
+     * Método toXML.
+     *
+     * @param i1 Objeto Individuo.
+     * @throws JAXBException Exceção.
+     */
+    public final void toXML(final Individuo i1) throws JAXBException {
         ArrayList<Individuo> individuo = new ArrayList<Individuo>();
         individuo.add(i1);
         Individuos individuos = new Individuos();

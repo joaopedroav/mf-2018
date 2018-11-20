@@ -16,14 +16,32 @@ import com.github.jops425.dto.models.Vinculo;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+/**
+ * Classe VinculoDTO.
+ *
+ * @author aluno
+ *
+ */
 public class VinculoDTO {
 
+    /**
+     * Método fromJson.
+     *
+     * @param arquivo Caminho do arquivo.
+     * @return Lista de vínculos.
+     */
     public final Vinculos fromJson(final String arquivo) {
         Gson gson = new Gson();
         Vinculos vinculos = gson.fromJson(arquivo, Vinculos.class);
         return vinculos;
     }
 
+    /**
+     * Método toJson.
+     *
+     * @param vincs Lista de vínculos.
+     * @param caminho Caminho do arquivo.
+     */
     public final void toJson(
             final Vinculos vincs, final String caminho) {
         try (Writer writer = new FileWriter(caminho)) {
@@ -32,6 +50,14 @@ public class VinculoDTO {
         } catch (Exception e) { }
     }
 
+    /**
+     * Método fromXML.
+     *
+     * @param arquivo Caminho do arquivo.
+     * @return Lista de vínculos.
+     * @throws FileNotFoundException Exceção.
+     * @throws JAXBException Exceção.
+     */
     public final Vinculos fromXML(final String arquivo)
             throws FileNotFoundException, JAXBException {
         JAXBContext context = JAXBContext.newInstance(Vinculos.class);
@@ -40,6 +66,12 @@ public class VinculoDTO {
         return vinculos;
     }
 
+    /**
+     * Método toXML.
+     *
+     * @param v1 Objeto de Vinculo.
+     * @throws JAXBException Exceção.
+     */
     public final void toXML(final Vinculo v1) throws JAXBException {
         ArrayList<Vinculo> vinculo = new ArrayList<Vinculo>();
         vinculo.add(v1);
