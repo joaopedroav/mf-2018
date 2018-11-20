@@ -6,7 +6,7 @@ import java.time.LocalDate;
  * @author João
  *
  */
-public class Endereco {
+public final class Endereco {
 
     private Individuo id;
 
@@ -37,17 +37,17 @@ public class Endereco {
      *
      * @return Variavel id.
      */
-    public Individuo getId() {
+    public final Individuo getId() {
         return id;
     }
 
     /**
      * Setter para id.
      *
-     * @param id Variável id a ser editada.
+     * @param id1 Variável id1 a ser editada.
      */
-    public void setId(Individuo id) {
-        this.id = id;
+    public final void setId(final Individuo id1) {
+        this.id = id1;
     }
 
     /**
@@ -55,17 +55,17 @@ public class Endereco {
      *
      * @return Variavel ordem.
      */
-    public String getOrdem() {
+    public final String getOrdem() {
         return ordem;
     }
 
     /**
      * Setter para ordem.
      *
-     * @param ordem Variável ordem a ser editada.
+     * @param ordem1 Variável ordem a ser editada.
      */
-    public void setOrdem(String ordem) {
-        this.ordem = ordem;
+    public final void setOrdem(final String ordem1) {
+        this.ordem = ordem1;
     }
 
     /**
@@ -73,17 +73,17 @@ public class Endereco {
      *
      * @return Variavel linha.
      */
-    public String getLinha() {
+    public final String getLinha() {
         return linha;
     }
 
     /**
      * Setter para linha.
      *
-     * @param linha Variável linha a ser editada.
+     * @param linha1 Variável linha a ser editada.
      */
-    public void setLinha(String linha) {
-        this.linha = linha;
+    public final void setLinha(final String linha1) {
+        this.linha = linha1;
     }
 
     /**
@@ -91,17 +91,17 @@ public class Endereco {
      *
      * @return Variavel bairro.
      */
-    public String getBairro() {
+    public final String getBairro() {
         return bairro;
     }
 
     /**
      * Setter para bairro.
      *
-     * @param bairro Variável bairro a ser editada.
+     * @param bairro1 Variável bairro a ser editada.
      */
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
+    public final void setBairro(final String bairro1) {
+        this.bairro = bairro1;
     }
 
     /**
@@ -109,17 +109,17 @@ public class Endereco {
      *
      * @return Variavel distrito.
      */
-    public String getDistrito() {
+    public final String getDistrito() {
         return distrito;
     }
 
     /**
      * Setter para distrito.
      *
-     * @param distrito Variável distrito a ser editada.
+     * @param distrito1 Variável distrito a ser editada.
      */
-    public void setDistrito(String distrito) {
-        this.distrito = distrito;
+    public final void setDistrito(final String distrito1) {
+        this.distrito = distrito1;
     }
 
     /**
@@ -127,17 +127,17 @@ public class Endereco {
      *
      * @return Variavel codigoMunicipio.
      */
-    public int getCodigoMunicipio() {
+    public final int getCodigoMunicipio() {
         return codigoMunicipio;
     }
 
     /**
      * Setter para codigoMunicipio.
      *
-     * @param codigoMunicipio Variável codigoMunicipio a ser editada.
+     * @param codigoMunicipio1 Variável codigoMunicipio a ser editada.
      */
-    public void setCodigoMunicipio(int codigoMunicipio) {
-        this.codigoMunicipio = codigoMunicipio;
+    public final void setCodigoMunicipio(final int codigoMunicipio1) {
+        this.codigoMunicipio = codigoMunicipio1;
     }
 
     /**
@@ -145,17 +145,17 @@ public class Endereco {
      *
      * @return Variavel cep.
      */
-    public String getCep() {
+    public final String getCep() {
         return cep;
     }
 
     /**
      * Setter para cep.
      *
-     * @param cep Variável cep a ser editada.
+     * @param cep1 Variável cep a ser editada.
      */
-    public void setCep(String cep) {
-        this.cep = cep;
+    public final void setCep(final String cep1) {
+        this.cep = cep1;
     }
 
     /**
@@ -163,17 +163,17 @@ public class Endereco {
      *
      * @return Variavel caixaPostal.
      */
-    public String getCaixaPostal() {
+    public final String getCaixaPostal() {
         return caixaPostal;
     }
 
     /**
      * Setter para caixaPostal.
      *
-     * @param caixaPostal Variável caixaPostal a ser editada.
+     * @param caixaPostal1 Variável caixaPostal a ser editada.
      */
-    public void setCaixaPostal(String caixaPostal) {
-        this.caixaPostal = caixaPostal;
+    public final void setCaixaPostal(final String caixaPostal1) {
+        this.caixaPostal = caixaPostal1;
     }
 
     /**
@@ -181,17 +181,17 @@ public class Endereco {
      *
      * @return Variavel pais.
      */
-    public String getPais() {
+    public final String getPais() {
         return pais;
     }
 
     /**
      * Setter para pais.
      *
-     * @param pais Variável pais a ser editada.
+     * @param pais1 Variável pais a ser editada.
      */
-    public void setPais(String pais) {
-        this.pais = pais;
+    public final void setPais(final String pais1) {
+        this.pais = pais1;
     }
 
     /**
@@ -199,17 +199,17 @@ public class Endereco {
      *
      * @return Variavel tipo.
      */
-    public String getTipo() {
+    public final String getTipo() {
         return tipo;
     }
 
     /**
      * Setter para tipo.
      *
-     * @param tipo Variável tipo a ser editada.
+     * @param tipo1 Variável tipo a ser editada.
      */
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public final void setTipo(final String tipo1) {
+        this.tipo = tipo1;
     }
 
     /**
@@ -217,17 +217,17 @@ public class Endereco {
      *
      * @return Variavel data.
      */
-    public LocalDate getData() {
+    public final LocalDate getData() {
         return data;
     }
 
     /**
      * Setter para data.
      *
-     * @param data Variável data a ser editada.
+     * @param data1 Variável data a ser editada.
      */
-    public void setData(LocalDate data) {
-        this.data = data;
+    public final void setData(final LocalDate data1) {
+        this.data = data1;
     }
 
     /**
@@ -235,17 +235,17 @@ public class Endereco {
      *
      * @return Variavel acuracia.
      */
-    public String getAcuracia() {
+    public final String getAcuracia() {
         return acuracia;
     }
 
     /**
      * Setter para acuracia.
      *
-     * @param acuracia Variável acuracia a ser editada.
+     * @param acuracia1 Variável acuracia a ser editada.
      */
-    public void setAcuracia(String acuracia) {
-        this.acuracia = acuracia;
+    public final void setAcuracia(final String acuracia1) {
+        this.acuracia = acuracia1;
     }
 
 

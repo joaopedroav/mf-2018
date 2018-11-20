@@ -5,7 +5,7 @@ import java.time.LocalDate;
 /**
  * Classe Dado Demográfico.
  */
-public class DadoDemografico {
+public final class DadoDemografico {
 
     /**
      * Indivíduo.
@@ -112,17 +112,17 @@ public class DadoDemografico {
      *
      * @return Variavel individuo.
      */
-    public Individuo getIndividuo() {
+    public final Individuo getIndividuo() {
         return individuo;
     }
 
     /**
      * Setter para individuo.
      *
-     * @param individuo Variável individuo a ser editada.
+     * @param individuo1 Variável individuo a ser editada.
      */
-    public void setIndividuo(Individuo individuo) {
-        this.individuo = individuo;
+    public final void setIndividuo(final Individuo individuo1) {
+        this.individuo = individuo1;
     }
 
     /**
@@ -130,17 +130,17 @@ public class DadoDemografico {
      *
      * @return Variavel nascimento.
      */
-    public LocalDate getNascimento() {
+    public final LocalDate getNascimento() {
         return nascimento;
     }
 
     /**
      * Setter para nascimento.
      *
-     * @param nascimento Variável nascimento a ser editada.
+     * @param nascimento1 Variável nascimento a ser editada.
      */
-    public void setNascimento(LocalDate nascimento) {
-        this.nascimento = nascimento;
+    public final void setNascimento(final LocalDate nascimento1) {
+        this.nascimento = nascimento1;
     }
 
     /**
@@ -148,17 +148,18 @@ public class DadoDemografico {
      *
      * @return Variavel nascimentoAcuracia.
      */
-    public String getNascimentoAcuracia() {
+    public final String getNascimentoAcuracia() {
         return nascimentoAcuracia;
     }
 
     /**
      * Setter para nascimentoAcuracia.
      *
-     * @param nascimentoAcuracia Variável nascimentoAcuracia a ser editada.
+     * @param nascimentoAcuracia1 Variável nascimentoAcuracia a ser editada.
      */
-    public void setNascimentoAcuracia(String nascimentoAcuracia) {
-        this.nascimentoAcuracia = nascimentoAcuracia;
+    public final void setNascimentoAcuracia(
+            final String nascimentoAcuracia1) {
+        this.nascimentoAcuracia = nascimentoAcuracia1;
     }
 
     /**
@@ -166,17 +167,18 @@ public class DadoDemografico {
      *
      * @return Variavel nascimentoSeg.
      */
-    public String getNascimentoSeg() {
+    public final String getNascimentoSeg() {
         return nascimentoSeg;
     }
 
     /**
      * Setter para nascimentoSeg.
      *
-     * @param nascimentoSeg Variável nascimentoSeg a ser editada.
+     * @param nascimentoSeg1 Variável nascimentoSeg a ser editada.
      */
-    public void setNascimentoSeg(String nascimentoSeg) {
-        this.nascimentoSeg = nascimentoSeg;
+    public final void setNascimentoSeg(final
+            String nascimentoSeg1) {
+        this.nascimentoSeg = nascimentoSeg1;
     }
 
     /**
@@ -184,17 +186,17 @@ public class DadoDemografico {
      *
      * @return Variavel nascimentoPl.
      */
-    public int getNascimentoPl() {
+    public final int getNascimentoPl() {
         return nascimentoPl;
     }
 
     /**
      * Setter para nascimentoPl.
      *
-     * @param nascimentoPl Variável nascimentoPl a ser editada.
+     * @param nascimentoPl1 Variável nascimentoPl a ser editada.
      */
-    public void setNascimentoPl(int nascimentoPl) {
-        this.nascimentoPl = nascimentoPl;
+    public final void setNascimentoPl(final int nascimentoPl1) {
+        this.nascimentoPl = nascimentoPl1;
     }
 
     /**
@@ -202,17 +204,18 @@ public class DadoDemografico {
      *
      * @return Variavel nascimentoOrdem.
      */
-    public int getNascimentoOrdem() {
+    public final int getNascimentoOrdem() {
         return nascimentoOrdem;
     }
 
     /**
      * Setter para nascimentoOrdem.
      *
-     * @param nascimentoOrdem Variável nascimentoOrdem a ser editada.
+     * @param nascimentoOrdem1 Variável nascimentoOrdem a ser editada.
      */
-    public void setNascimentoOrdem(int nascimentoOrdem) {
-        this.nascimentoOrdem = nascimentoOrdem;
+    public final void setNascimentoOrdem(
+            final int nascimentoOrdem1) {
+        this.nascimentoOrdem = nascimentoOrdem1;
     }
 
     /**
@@ -220,17 +223,17 @@ public class DadoDemografico {
      *
      * @return Variavel obito.
      */
-    public LocalDate getObito() {
+    public final LocalDate getObito() {
         return obito;
     }
 
     /**
      * Setter para obito.
      *
-     * @param obito Variável obito a ser editada.
+     * @param obito1 Variável obito a ser editada.
      */
-    public void setObito(LocalDate obito) {
-        this.obito = obito;
+    public final void setObito(final LocalDate obito1) {
+        this.obito = obito1;
     }
 
     /**
@@ -238,17 +241,17 @@ public class DadoDemografico {
      *
      * @return Variavel obitoAcuracia.
      */
-    public String getObitoAcuracia() {
+    public final String getObitoAcuracia() {
         return obitoAcuracia;
     }
 
     /**
      * Setter para obitoAcuracia.
      *
-     * @param obitoAcuracia Variável obitoAcuracia a ser editada.
+     * @param obitoAcuracia1 Variável obitoAcuracia a ser editada.
      */
-    public void setObitoAcuracia(String obitoAcuracia) {
-        this.obitoAcuracia = obitoAcuracia;
+    public final void setObitoAcuracia(final String obitoAcuracia1) {
+        this.obitoAcuracia = obitoAcuracia1;
     }
 
     /**
@@ -256,17 +259,17 @@ public class DadoDemografico {
      *
      * @return Variavel obitoFonte.
      */
-    public int getObitoFonte() {
+    public final int getObitoFonte() {
         return obitoFonte;
     }
 
     /**
      * Setter para obitoFonte.
      *
-     * @param obitoFonte Variável obitoFonte a ser editada.
+     * @param obitoFonte1 Variável obitoFonte a ser editada.
      */
-    public void setObitoFonte(int obitoFonte) {
-        this.obitoFonte = obitoFonte;
+    public final void setObitoFonte(final int obitoFonte1) {
+        this.obitoFonte = obitoFonte1;
     }
 
     /**
@@ -274,17 +277,17 @@ public class DadoDemografico {
      *
      * @return Variavel sexo.
      */
-    public int getSexo() {
+    public final int getSexo() {
         return sexo;
     }
 
     /**
      * Setter para sexo.
      *
-     * @param sexo Variável sexo a ser editada.
+     * @param sexo1 Variável sexo a ser editada.
      */
-    public void setSexo(int sexo) {
-        this.sexo = sexo;
+    public final void setSexo(final int sexo1) {
+        this.sexo = sexo1;
     }
 
     /**
@@ -292,17 +295,17 @@ public class DadoDemografico {
      *
      * @return Variavel mae.
      */
-    public String getMae() {
+    public final String getMae() {
         return mae;
     }
 
     /**
      * Setter para mae.
      *
-     * @param mae Variável mae a ser editada.
+     * @param mae1 Variável mae a ser editada.
      */
-    public void setMae(String mae) {
-        this.mae = mae;
+    public final void setMae(final String mae1) {
+        this.mae = mae1;
     }
 
     /**
@@ -310,17 +313,17 @@ public class DadoDemografico {
      *
      * @return Variavel pai.
      */
-    public String getPai() {
+    public final String getPai() {
         return pai;
     }
 
     /**
      * Setter para pai.
      *
-     * @param pai Variável pai a ser editada.
+     * @param pai1 Variável pai a ser editada.
      */
-    public void setPai(String pai) {
-        this.pai = pai;
+    public final void setPai(final String pai1) {
+        this.pai = pai1;
     }
 
     /**
@@ -328,17 +331,18 @@ public class DadoDemografico {
      *
      * @return Variavel situacaoFamiliar.
      */
-    public int getSituacaoFamiliar() {
+    public final int getSituacaoFamiliar() {
         return situacaoFamiliar;
     }
 
     /**
      * Setter para situacaoFamiliar.
      *
-     * @param situacaoFamiliar Variável situacaoFamiliar a ser editada.
+     * @param situacaoFamiliar1 Variável situacaoFamiliar a ser editada.
      */
-    public void setSituacaoFamiliar(int situacaoFamiliar) {
-        this.situacaoFamiliar = situacaoFamiliar;
+    public final void setSituacaoFamiliar(
+            final int situacaoFamiliar1) {
+        this.situacaoFamiliar = situacaoFamiliar1;
     }
 
     /**
@@ -346,17 +350,17 @@ public class DadoDemografico {
      *
      * @return Variavel raca.
      */
-    public int getRaca() {
+    public final int getRaca() {
         return raca;
     }
 
     /**
      * Setter para raca.
      *
-     * @param raca Variável raca a ser editada.
+     * @param raca1 Variável raca a ser editada.
      */
-    public void setRaca(int raca) {
-        this.raca = raca;
+    public final void setRaca(final int raca1) {
+        this.raca = raca1;
     }
 
     /**
@@ -364,17 +368,17 @@ public class DadoDemografico {
      *
      * @return Variavel comentario.
      */
-    public String getComentario() {
+    public final String getComentario() {
         return comentario;
     }
 
     /**
      * Setter para comentario.
      *
-     * @param comentario Variável comentario a ser editada.
+     * @param comentario1 Variável comentario a ser editada.
      */
-    public void setComentario(String comentario) {
-        this.comentario = comentario;
+    public final void setComentario(final String comentario1) {
+        this.comentario = comentario1;
     }
 
     /**
@@ -382,17 +386,17 @@ public class DadoDemografico {
      *
      * @return Variavel nacionalidade.
      */
-    public int getNacionalidade() {
+    public final int getNacionalidade() {
         return nacionalidade;
     }
 
     /**
      * Setter para nacionalidade.
      *
-     * @param nacionalidade Variável nacionalidade a ser editada.
+     * @param nacionalidade1 Variável nacionalidade a ser editada.
      */
-    public void setNacionalidade(int nacionalidade) {
-        this.nacionalidade = nacionalidade;
+    public final void setNacionalidade(final int nacionalidade1) {
+        this.nacionalidade = nacionalidade1;
     }
 
     /**
@@ -400,17 +404,17 @@ public class DadoDemografico {
      *
      * @return Variavel municipio.
      */
-    public int getMunicipio() {
+    public final int getMunicipio() {
         return municipio;
     }
 
     /**
      * Setter para municipio.
      *
-     * @param municipio Variável municipio a ser editada.
+     * @param municipio1 Variável municipio a ser editada.
      */
-    public void setMunicipio(int municipio) {
-        this.municipio = municipio;
+    public final void setMunicipio(final int municipio1) {
+        this.municipio = municipio1;
     }
 
     /**
@@ -418,17 +422,17 @@ public class DadoDemografico {
      *
      * @return Variavel estado.
      */
-    public int getEstado() {
+    public final int getEstado() {
         return estado;
     }
 
     /**
      * Setter para estado.
      *
-     * @param estado Variável estado a ser editada.
+     * @param estado1 Variável estado a ser editada.
      */
-    public void setEstado(int estado) {
-        this.estado = estado;
+    public final void setEstado(final int estado1) {
+        this.estado = estado1;
     }
 
     /**
@@ -436,17 +440,17 @@ public class DadoDemografico {
      *
      * @return Variavel pais.
      */
-    public int getPais() {
+    public final int getPais() {
         return pais;
     }
 
     /**
      * Setter para pais.
      *
-     * @param pais Variável pais a ser editada.
+     * @param pais1 Variável pais a ser editada.
      */
-    public void setPais(int pais) {
-        this.pais = pais;
+    public final void setPais(final int pais1) {
+        this.pais = pais1;
     }
 
     /**
@@ -454,17 +458,17 @@ public class DadoDemografico {
      *
      * @return Variavel dataEntradaPais.
      */
-    public LocalDate getDataEntradaPais() {
+    public final LocalDate getDataEntradaPais() {
         return dataEntradaPais;
     }
 
     /**
      * Setter para dataEntradaPais.
      *
-     * @param dataEntradaPais Variável dataEntradaPais a ser editada.
+     * @param dataEntradaPais1 Variável dataEntradaPais a ser editada.
      */
-    public void setDataEntradaPais(LocalDate dataEntradaPais) {
-        this.dataEntradaPais = dataEntradaPais;
+    public final void setDataEntradaPais(final LocalDate dataEntradaPais1) {
+        this.dataEntradaPais = dataEntradaPais1;
     }
 
 }

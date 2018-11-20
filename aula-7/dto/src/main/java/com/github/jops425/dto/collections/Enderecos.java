@@ -13,17 +13,17 @@ public class Enderecos {
      *
      * @return Variável enderecos.
      */
-    public ArrayList<Endereco> getEnderecos() {
+    public final ArrayList<Endereco> getEnderecos() {
         return enderecos;
     }
 
     /**
      * Setter para enderecos.
      *
-     * @param enderecos Variável enderecos a ser editada.
+     * @param enderecos1 Variável enderecos a ser editada.
      */
-    public void setEnderecos(ArrayList<Endereco> enderecos) {
-        this.enderecos = enderecos;
+    public final void setEnderecos(final ArrayList<Endereco> enderecos1) {
+        this.enderecos = enderecos1;
     }
 
 }

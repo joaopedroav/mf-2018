@@ -17,17 +17,17 @@ public class Vinculo {
      *
      * @return Variavel id.
      */
-    public Individuo getId() {
+    public final Individuo getId() {
         return id;
     }
 
     /**
      * Setter para id.
      *
-     * @param id Variável id a ser editada.
+     * @param id1 Variável id1 a ser editada.
      */
-    public void setId(Individuo id) {
-        this.id = id;
+    public final void setId(final Individuo id1) {
+        this.id = id1;
     }
 
     /**
@@ -35,17 +35,17 @@ public class Vinculo {
      *
      * @return Variavel relacionamento.
      */
-    public String getRelacionamento() {
+    public final String getRelacionamento() {
         return relacionamento;
     }
 
     /**
      * Setter para relacionamento.
      *
-     * @param relacionamento Variável relacionamento a ser editada.
+     * @param relacionamento1 Variável relacionamento1 a ser editada.
      */
-    public void setRelacionamento(String relacionamento) {
-        this.relacionamento = relacionamento;
+    public final void setRelacionamento(final String relacionamento1) {
+        this.relacionamento = relacionamento1;
     }
 
     /**
@@ -53,17 +53,17 @@ public class Vinculo {
      *
      * @return Variavel dataInicio.
      */
-    public LocalDate getDataInicio() {
+    public final LocalDate getDataInicio() {
         return dataInicio;
     }
 
     /**
      * Setter para dataInicio.
      *
-     * @param dataInicio Variável dataInicio a ser editada.
+     * @param dataInicio1 Variável dataInicio1 a ser editada.
      */
-    public void setDataInicio(LocalDate dataInicio) {
-        this.dataInicio = dataInicio;
+    public final void setDataInicio(final LocalDate dataInicio1) {
+        this.dataInicio = dataInicio1;
     }
 
     /**
@@ -71,17 +71,17 @@ public class Vinculo {
      *
      * @return Variavel dataFim.
      */
-    public LocalDate getDataFim() {
+    public final LocalDate getDataFim() {
         return dataFim;
     }
 
     /**
      * Setter para dataFim.
      *
-     * @param dataFim Variável dataFim a ser editada.
+     * @param dataFim1 Variável dataFim1 a ser editada.
      */
-    public void setDataFim(LocalDate dataFim) {
-        this.dataFim = dataFim;
+    public final void setDataFim(final LocalDate dataFim1) {
+        this.dataFim = dataFim1;
     }
 
 }

@@ -17,22 +17,47 @@ import com.github.jops425.dto.models.Endereco;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+/**
+ * Classe EnderecoDTO.
+ *
+ * @author joaopedro
+ *
+ */
 public class EnderecoDTO {
 
-	public Enderecos fromJson(final String arquivo) {
-	    Gson gson = new Gson();
-	    Enderecos ends = gson.fromJson(arquivo, Enderecos.class);
+    /**
+     * Método fromJson.
+     *
+     * @param arquivo Caminho do arquivo.
+     * @return Lista.
+     */
+    public final Enderecos fromJson(final String arquivo) {
+        Gson gson = new Gson();
+        Enderecos ends = gson.fromJson(arquivo, Enderecos.class);
         return ends;
-	}
+    }
 
-	public void toJson(final Enderecos ends, String caminho) {
-	    try (Writer writer = new FileWriter(caminho)) {
+    /**
+     * Método toJson.
+     *
+     * @param ends Lista.
+     * @param caminho Caminho do arquivo.
+     */
+    public final void toJson(final Enderecos ends, final String caminho) {
+        try (Writer writer = new FileWriter(caminho)) {
             Gson gson = new GsonBuilder().create();
             gson.toJson(ends, writer);
         } catch (Exception e) { }
-	}
+    }
 
-	public Enderecos fromXML(final String arquivo)
+    /**
+     * Método fromXML.
+     * @param arquivo Caminho do arquivo.
+     * @return Lista de endereços.
+     * @throws FileNotFoundException Exceção.
+     * @throws JAXBException Exceção.
+     */
+    public final Enderecos fromXML(final String arquivo)
             throws FileNotFoundException, JAXBException {
         JAXBContext context = JAXBContext.newInstance(Enderecos.class);
         Unmarshaller un = context.createUnmarshaller();
@@ -40,8 +65,14 @@ public class EnderecoDTO {
         return ends;
     }
 
-	public void toXML(final Endereco e1) throws JAXBException {
-	    ArrayList<Endereco> endereco = new ArrayList<Endereco>();
+    /**
+     * Método toXML.
+     *
+     * @param e1 Objeto Endereco.
+     * @throws JAXBException Exceção.
+     */
+    public final void toXML(final Endereco e1) throws JAXBException {
+        ArrayList<Endereco> endereco = new ArrayList<Endereco>();
         endereco.add(e1);
         Enderecos enderecos = new Enderecos();
         enderecos.setEnderecos(endereco);
@@ -49,6 +80,6 @@ public class EnderecoDTO {
         Marshaller m = context.createMarshaller();
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         m.marshal(enderecos, System.out);
-	}
+    }
 
 }

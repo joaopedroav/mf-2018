@@ -19,21 +19,21 @@ import com.google.gson.GsonBuilder;
 
 public class IdentificadorDTO {
 
-    public Identificadores fromJson(final String arquivo) {
+    public final Identificadores fromJson(final String arquivo) {
         Gson gson = new Gson();
         Identificadores coms = gson.fromJson(arquivo, Identificadores.class);
         return coms;
     }
 
-    public void toJson(
-            final Identificadores idens, String caminho) {
+    public final void toJson(
+            final Identificadores idens, final String caminho) {
         try (Writer writer = new FileWriter(caminho)) {
             Gson gson = new GsonBuilder().create();
             gson.toJson(idens, writer);
         } catch (Exception e) { }
     }
 
-    public Identificadores fromXML(final String arquivo)
+    public final Identificadores fromXML(final String arquivo)
             throws FileNotFoundException, JAXBException {
         JAXBContext context = JAXBContext.newInstance(Identificadores.class);
         Unmarshaller un = context.createUnmarshaller();
@@ -41,7 +41,7 @@ public class IdentificadorDTO {
         return inds;
     }
 
-    public void toXML(final Identificador id1) throws JAXBException {
+    public final void toXML(final Identificador id1) throws JAXBException {
         ArrayList<Identificador> idn = new ArrayList<Identificador>();
         idn.add(id1);
         Identificadores idns = new Identificadores();

@@ -13,17 +13,17 @@ public class Vinculos {
      *
      * @return Variável vincs.
      */
-    public ArrayList<Vinculo> getVincs() {
+    public final ArrayList<Vinculo> getVincs() {
         return vincs;
     }
 
     /**
      * Setter para vincs.
      *
-     * @param vincs Variável vincs a ser editada.
+     * @param vincs1 Variável vincs a ser editada.
      */
-    public void setVincs(ArrayList<Vinculo> vincs) {
-        this.vincs = vincs;
+    public final void setVincs(final ArrayList<Vinculo> vincs1) {
+        this.vincs = vincs1;
     }
 
 }

@@ -18,21 +18,21 @@ import com.google.gson.GsonBuilder;
 
 public class VinculoDTO {
 
-    public Vinculos fromJson(final String arquivo) {
+    public final Vinculos fromJson(final String arquivo) {
         Gson gson = new Gson();
         Vinculos vinculos = gson.fromJson(arquivo, Vinculos.class);
         return vinculos;
     }
 
-    public void toJson(
-            final Vinculos vincs, String caminho) {
+    public final void toJson(
+            final Vinculos vincs, final String caminho) {
         try (Writer writer = new FileWriter(caminho)) {
             Gson gson = new GsonBuilder().create();
             gson.toJson(vincs, writer);
         } catch (Exception e) { }
     }
 
-    public Vinculos fromXML(final String arquivo)
+    public final Vinculos fromXML(final String arquivo)
             throws FileNotFoundException, JAXBException {
         JAXBContext context = JAXBContext.newInstance(Vinculos.class);
         Unmarshaller un = context.createUnmarshaller();
@@ -40,7 +40,7 @@ public class VinculoDTO {
         return vinculos;
     }
 
-    public void toXML(final Vinculo v1) throws JAXBException {
+    public final void toXML(final Vinculo v1) throws JAXBException {
         ArrayList<Vinculo> vinculo = new ArrayList<Vinculo>();
         vinculo.add(v1);
         Vinculos vinculos = new Vinculos();

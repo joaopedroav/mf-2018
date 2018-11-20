@@ -13,17 +13,17 @@ public class Dados {
 	 *
 	 * @return Variável dados.
 	 */
-	public ArrayList<DadoDemografico> getDados() {
+	public final ArrayList<DadoDemografico> getDados() {
 		return dados;
 	}
 
 	/**
 	 * Setter para dados.
 	 *
-	 * @param dados Variável dados a ser editada.
+	 * @param dados1 Variável dados a ser editada.
 	 */
-	public void setDados(ArrayList<DadoDemografico> dados) {
-		this.dados = dados;
+	public final void setDados(final ArrayList<DadoDemografico> dados1) {
+		this.dados = dados1;
 	}
 
 }

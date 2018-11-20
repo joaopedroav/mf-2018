@@ -13,17 +13,17 @@ public class Individuos {
      *
      * @return Variável individuos.
      */
-    public ArrayList<Individuo> getIndividuos() {
+    public final ArrayList<Individuo> getIndividuos() {
         return individuos;
     }
 
     /**
      * Setter para individuos.
      *
-     * @param individuos Variável individuos a ser editada.
+     * @param individuos1 Variável individuos a ser editada.
      */
-    public void setIndividuos(ArrayList<Individuo> individuos) {
-        this.individuos = individuos;
+    public final void setIndividuos(final ArrayList<Individuo> individuos1) {
+        this.individuos = individuos1;
     }
 
 }

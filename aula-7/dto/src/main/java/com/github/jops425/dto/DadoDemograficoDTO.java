@@ -17,31 +17,62 @@ import com.github.jops425.dto.models.DadoDemografico;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+/**
+ * Classe DadoDemograficoDTO.
+ *
+ * @author joaopedro
+ *
+ */
 public class DadoDemograficoDTO {
 
-	public Dados fromJson(final String arquivo) {
-	    Gson gson = new Gson();
+    /**
+     * Método fromJson.
+     *
+     * @param arquivo Caminho do arquivo.
+     * @return Lista de Dados.
+     */
+    public final Dados fromJson(final String arquivo) {
+        Gson gson = new Gson();
         Dados dados = gson.fromJson(arquivo, Dados.class);
         return dados;
-	}
+    }
 
-	public void toJson(final Dados dados, String caminho) {
-	    try (Writer writer = new FileWriter(caminho)) {
+    /**
+     * Método toJson.
+     *
+     * @param dados Lista de Dados.
+     * @param caminho Caminho do arquivo.
+     */
+    public final void toJson(final Dados dados, final String caminho) {
+        try (Writer writer = new FileWriter(caminho)) {
             Gson gson = new GsonBuilder().create();
             gson.toJson(dados, writer);
         } catch (Exception e) { }
-	}
+    }
 
-	public Dados fromXML(final String arquivo)
-	        throws FileNotFoundException, JAXBException {
-	    JAXBContext context = JAXBContext.newInstance(Comunicacoes.class);
+    /**
+     * Método fromXML.
+     *
+     * @param arquivo Caminho do arquivo.
+     * @return Lista de dados.
+     * @throws FileNotFoundException Exceção.
+     * @throws JAXBException Exceção.
+     */
+    public final Dados fromXML(final String arquivo)
+            throws FileNotFoundException, JAXBException {
+        JAXBContext context = JAXBContext.newInstance(Comunicacoes.class);
         Unmarshaller un = context.createUnmarshaller();
         Dados dados = (Dados) un.unmarshal(new FileReader(arquivo));
-	    return dados;	
-	}
+        return dados;
+    }
 
-	public void toXML(final DadoDemografico d1) throws JAXBException {
-	    ArrayList<DadoDemografico> dado = new ArrayList<DadoDemografico>();
+    /**
+     * Método toXML.
+     * @param d1 Objeto DadoDemografico.
+     * @throws JAXBException Exceção.
+     */
+    public final void toXML(final DadoDemografico d1) throws JAXBException {
+        ArrayList<DadoDemografico> dado = new ArrayList<DadoDemografico>();
         dado.add(d1);
         Dados dados = new Dados();
         dados.setDados(dado);
@@ -49,6 +80,6 @@ public class DadoDemograficoDTO {
         Marshaller m = context.createMarshaller();
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         m.marshal(dados, System.out);
-	}
+    }
 
 }

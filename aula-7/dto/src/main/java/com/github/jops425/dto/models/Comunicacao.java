@@ -4,7 +4,7 @@ package com.github.jops425.dto.models;
  * @author aluno
  *
  */
-public class Comunicacao {
+public final class Comunicacao {
 
     private Individuo id;
 
@@ -28,10 +28,10 @@ public class Comunicacao {
     /**
      * Setter para id.
      *
-     * @param id Variável id a ser editada.
+     * @param id1 Variável id a ser editada.
      */
-    public void setId(Individuo id) {
-        this.id = id;
+    public void setId(final Individuo id1) {
+        this.id = id1;
     }
 
     /**
@@ -46,10 +46,10 @@ public class Comunicacao {
     /**
      * Setter para meio.
      *
-     * @param meio Variável meio a ser editada.
+     * @param meio1 Variável meio a ser editada.
      */
-    public void setMeio(String meio) {
-        this.meio = meio;
+    public void setMeio(final String meio1) {
+        this.meio = meio1;
     }
 
     /**
@@ -64,10 +64,10 @@ public class Comunicacao {
     /**
      * Setter para preferencia.
      *
-     * @param preferencia Variável preferencia a ser editada.
+     * @param preferencia1 Variável preferencia a ser editada.
      */
-    public void setPreferencia(String preferencia) {
-        this.preferencia = preferencia;
+    public void setPreferencia(final String preferencia1) {
+        this.preferencia = preferencia1;
     }
 
     /**
@@ -82,10 +82,10 @@ public class Comunicacao {
     /**
      * Setter para detalhe.
      *
-     * @param detalhe Variável detalhe a ser editada.
+     * @param detalhe1 Variável detalhe a ser editada.
      */
-    public void setDetalhe(String detalhe) {
-        this.detalhe = detalhe;
+    public void setDetalhe(final String detalhe1) {
+        this.detalhe = detalhe1;
     }
 
     /**
@@ -100,10 +100,10 @@ public class Comunicacao {
     /**
      * Setter para uso.
      *
-     * @param uso Variável uso a ser editada.
+     * @param uso1 Variável uso a ser editada.
      */
-    public void setUso(String uso) {
-        this.uso = uso;
+    public void setUso(final String uso1) {
+        this.uso = uso1;
     }
 
 

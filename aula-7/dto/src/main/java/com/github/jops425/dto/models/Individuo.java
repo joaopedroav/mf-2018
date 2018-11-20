@@ -9,17 +9,17 @@ public class Individuo {
      *
      * @return Variavel id.
      */
-    public String getId() {
+    public final String getId() {
         return id;
     }
 
     /**
      * Setter para id.
      *
-     * @param id Variável id a ser editada.
+     * @param id1 Variável id1 a ser editada.
      */
-    public void setId(String id) {
-        this.id = id;
+    public final void setId(final String id1) {
+        this.id = id1;
     }
 
 }

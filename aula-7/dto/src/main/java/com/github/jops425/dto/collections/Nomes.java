@@ -13,17 +13,17 @@ public class Nomes {
      *
      * @return Variável nomes.
      */
-    public ArrayList<Nome> getNomes() {
+    public final ArrayList<Nome> getNomes() {
         return nomes;
     }
 
     /**
      * Setter para nomes.
      *
-     * @param nomes Variável nomes a ser editada.
+     * @param nomes1 Variável nomes a ser editada.
      */
-    public void setNomes(ArrayList<Nome> nomes) {
-        this.nomes = nomes;
+    public final void setNomes(final ArrayList<Nome> nomes1) {
+        this.nomes = nomes1;
     }
 
 }

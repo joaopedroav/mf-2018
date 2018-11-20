@@ -13,17 +13,18 @@ public class Identificadores {
      *
      * @return Variável identificadores.
      */
-    public ArrayList<Identificador> getIdentificadores() {
+    public final ArrayList<Identificador> getIdentificadores() {
         return identificadores;
     }
 
     /**
      * Setter para identificadores.
      *
-     * @param identificadores Variável identificadores a ser editada.
+     * @param identificadores1 Variável identificadores a ser editada.
      */
-    public void setIdentificadores(ArrayList<Identificador> identificadores) {
-        this.identificadores = identificadores;
+    public final void setIdentificadores(final
+            ArrayList<Identificador> identificadores1) {
+        this.identificadores = identificadores1;
     }
 
 }

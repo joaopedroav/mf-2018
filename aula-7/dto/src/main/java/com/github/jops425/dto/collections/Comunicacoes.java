@@ -13,17 +13,18 @@ public class Comunicacoes {
 	 *
 	 * @return Variável comunicacoes.
 	 */
-	public ArrayList<Comunicacao> getComunicacoes() {
+	public final ArrayList<Comunicacao> getComunicacoes() {
 		return comunicacoes;
 	}
 
 	/**
 	 * Setter para comunicacoes.
 	 *
-	 * @param comunicacoes Variável comunicacoes a ser editada.
+	 * @param comunicacoes1 Variável comunicacoes a ser editada.
 	 */
-	public void setComunicacoes(ArrayList<Comunicacao> comunicacoes) {
-		this.comunicacoes = comunicacoes;
+	public final void setComunicacoes(final
+	        ArrayList<Comunicacao> comunicacoes1) {
+		this.comunicacoes = comunicacoes1;
 	}
 
 }

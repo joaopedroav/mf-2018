@@ -39,17 +39,17 @@ public class Identificador {
      *
      * @return Variavel id.
      */
-    public Individuo getId() {
+    public final Individuo getId() {
         return id;
     }
 
     /**
      * Setter para id.
      *
-     * @param id Variável id a ser editada.
+     * @param id1 Variável id1 a ser editada.
      */
-    public void setId(Individuo id) {
-        this.id = id;
+    public final void setId(final Individuo id1) {
+        this.id = id1;
     }
 
     /**
@@ -57,17 +57,17 @@ public class Identificador {
      *
      * @return Variavel designacao.
      */
-    public String getDesignacao() {
+    public final String getDesignacao() {
         return designacao;
     }
 
     /**
      * Setter para designacao.
      *
-     * @param designacao Variável designacao a ser editada.
+     * @param designacao1 Variável designacao1 a ser editada.
      */
-    public void setDesignacao(String designacao) {
-        this.designacao = designacao;
+    public final void setDesignacao(final String designacao1) {
+        this.designacao = designacao1;
     }
 
     /**
@@ -75,17 +75,17 @@ public class Identificador {
      *
      * @return Variavel area.
      */
-    public String getArea() {
+    public final String getArea() {
         return area;
     }
 
     /**
      * Setter para area.
      *
-     * @param area Variável area a ser editada.
+     * @param area1 Variável area1 a ser editada.
      */
-    public void setArea(String area) {
-        this.area = area;
+    public final void setArea(final String area1) {
+        this.area = area1;
     }
 
     /**
@@ -93,17 +93,17 @@ public class Identificador {
      *
      * @return Variavel emissor.
      */
-    public String getEmissor() {
+    public final String getEmissor() {
         return emissor;
     }
 
     /**
      * Setter para emissor.
      *
-     * @param emissor Variável emissor a ser editada.
+     * @param emissor1 Variável emissor1 a ser editada.
      */
-    public void setEmissor(String emissor) {
-        this.emissor = emissor;
+    public final void setEmissor(final String emissor1) {
+        this.emissor = emissor1;
     }
 
     /**
@@ -111,17 +111,17 @@ public class Identificador {
      *
      * @return Variavel data.
      */
-    public LocalDate getData() {
+    public final LocalDate getData() {
         return data;
     }
 
     /**
      * Setter para data.
      *
-     * @param data Variável data a ser editada.
+     * @param data1 Variável data1 a ser editada.
      */
-    public void setData(LocalDate data) {
-        this.data = data;
+    public final void setData(final LocalDate data1) {
+        this.data = data1;
     }
 
     /**
@@ -129,17 +129,17 @@ public class Identificador {
      *
      * @return Variavel tipo.
      */
-    public String getTipo() {
+    public final String getTipo() {
         return tipo;
     }
 
     /**
      * Setter para tipo.
      *
-     * @param tipo Variável tipo a ser editada.
+     * @param tipo1 Variável tipo1 a ser editada.
      */
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public final void setTipo(final String tipo1) {
+        this.tipo = tipo1;
     }
 
     /**
@@ -147,17 +147,17 @@ public class Identificador {
      *
      * @return Variavel serie.
      */
-    public String getSerie() {
+    public final String getSerie() {
         return serie;
     }
 
     /**
      * Setter para serie.
      *
-     * @param serie Variável serie a ser editada.
+     * @param serie1 Variável serie1 a ser editada.
      */
-    public void setSerie(String serie) {
-        this.serie = serie;
+    public final void setSerie(final String serie1) {
+        this.serie = serie1;
     }
 
     /**
@@ -165,17 +165,17 @@ public class Identificador {
      *
      * @return Variavel estado.
      */
-    public String getEstado() {
+    public final String getEstado() {
         return estado;
     }
 
     /**
      * Setter para estado.
      *
-     * @param estado Variável estado a ser editada.
+     * @param estado1 Variável estado1 a ser editada.
      */
-    public void setEstado(String estado) {
-        this.estado = estado;
+    public final void setEstado(final String estado1) {
+        this.estado = estado1;
     }
 
     /**
@@ -183,17 +183,17 @@ public class Identificador {
      *
      * @return Variavel tipoCertidao.
      */
-    public String getTipoCertidao() {
+    public final String getTipoCertidao() {
         return tipoCertidao;
     }
 
     /**
      * Setter para tipoCertidao.
      *
-     * @param tipoCertidao Variável tipoCertidao a ser editada.
+     * @param tipoCertidao1 Variável tipoCertidao1 a ser editada.
      */
-    public void setTipoCertidao(String tipoCertidao) {
-        this.tipoCertidao = tipoCertidao;
+    public final void setTipoCertidao(final String tipoCertidao1) {
+        this.tipoCertidao = tipoCertidao1;
     }
 
     /**
@@ -201,17 +201,17 @@ public class Identificador {
      *
      * @return Variavel cartorioCertidao.
      */
-    public String getCartorioCertidao() {
+    public final String getCartorioCertidao() {
         return cartorioCertidao;
     }
 
     /**
      * Setter para cartorioCertidao.
      *
-     * @param cartorioCertidao Variável cartorioCertidao a ser editada.
+     * @param cartorioCertidao1 Variável cartorioCertidao1 a ser editada.
      */
-    public void setCartorioCertidao(String cartorioCertidao) {
-        this.cartorioCertidao = cartorioCertidao;
+    public final void setCartorioCertidao(final String cartorioCertidao1) {
+        this.cartorioCertidao = cartorioCertidao1;
     }
 
     /**
@@ -219,17 +219,17 @@ public class Identificador {
      *
      * @return Variavel livroCertidao.
      */
-    public String getLivroCertidao() {
+    public final String getLivroCertidao() {
         return livroCertidao;
     }
 
     /**
      * Setter para livroCertidao.
      *
-     * @param livroCertidao Variável livroCertidao a ser editada.
+     * @param livroCertidao1 Variável livroCertidao1 a ser editada.
      */
-    public void setLivroCertidao(String livroCertidao) {
-        this.livroCertidao = livroCertidao;
+    public final void setLivroCertidao(final String livroCertidao1) {
+        this.livroCertidao = livroCertidao1;
     }
 
     /**
@@ -237,17 +237,17 @@ public class Identificador {
      *
      * @return Variavel folhaCertidao.
      */
-    public String getFolhaCertidao() {
+    public final String getFolhaCertidao() {
         return folhaCertidao;
     }
 
     /**
      * Setter para folhaCertidao.
      *
-     * @param folhaCertidao Variável folhaCertidao a ser editada.
+     * @param folhaCertidao1 Variável folhaCertidao1 a ser editada.
      */
-    public void setFolhaCertidao(String folhaCertidao) {
-        this.folhaCertidao = folhaCertidao;
+    public final void setFolhaCertidao(final String folhaCertidao1) {
+        this.folhaCertidao = folhaCertidao1;
     }
 
     /**
@@ -255,17 +255,17 @@ public class Identificador {
      *
      * @return Variavel termoCertidao.
      */
-    public String getTermoCertidao() {
+    public final String getTermoCertidao() {
         return termoCertidao;
     }
 
     /**
      * Setter para termoCertidao.
      *
-     * @param termoCertidao Variável termoCertidao a ser editada.
+     * @param termoCertidao1 Variável termoCertidao1 a ser editada.
      */
-    public void setTermoCertidao(String termoCertidao) {
-        this.termoCertidao = termoCertidao;
+    public final void setTermoCertidao(final String termoCertidao1) {
+        this.termoCertidao = termoCertidao1;
     }
 
     /**
@@ -273,17 +273,17 @@ public class Identificador {
      *
      * @return Variavel secaoTitulo.
      */
-    public String getSecaoTitulo() {
+    public final String getSecaoTitulo() {
         return secaoTitulo;
     }
 
     /**
      * Setter para secaoTitulo.
      *
-     * @param secaoTitulo Variável secaoTitulo a ser editada.
+     * @param secaoTitulo1 Variável secaoTitulo1 a ser editada.
      */
-    public void setSecaoTitulo(String secaoTitulo) {
-        this.secaoTitulo = secaoTitulo;
+    public final void setSecaoTitulo(final String secaoTitulo1) {
+        this.secaoTitulo = secaoTitulo1;
     }
 
     /**
@@ -291,17 +291,17 @@ public class Identificador {
      *
      * @return Variavel zonaTitulo.
      */
-    public String getZonaTitulo() {
+    public final String getZonaTitulo() {
         return zonaTitulo;
     }
 
     /**
      * Setter para zonaTitulo.
      *
-     * @param zonaTitulo Variável zonaTitulo a ser editada.
+     * @param zonaTitulo1 Variável zonaTitulo1 a ser editada.
      */
-    public void setZonaTitulo(String zonaTitulo) {
-        this.zonaTitulo = zonaTitulo;
+    public final void setZonaTitulo(final String zonaTitulo1) {
+        this.zonaTitulo = zonaTitulo1;
     }
 
 }
