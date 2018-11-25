@@ -214,7 +214,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>jars/</classpathPrefix>
-                            <mainClass>com.github.jops425.loinc.Main</mainClass>
+                            <mainClass>com.github.jops425.loinc.Arquivo</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
