@@ -13,3 +13,4 @@ create table loinc (
 );
 
 ```
+- Arquivo CSV obtido de: [Loinc](https://loinc.org/downloads/loinc/)
