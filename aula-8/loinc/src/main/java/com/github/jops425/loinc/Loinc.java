@@ -8,19 +8,34 @@ package com.github.jops425.loinc;
 public class Loinc {
 
     /**
-     * Chave primária do banco.
+     * Identificação.
      */
-    private String loincNum = null;
+    private String loincNum;
 
     /**
-     * MapTo.
+     * Component.
      */
-    private String mapTo = null;
+    private String component;
 
     /**
-     * Comment.
+     * Property.
      */
-    private String comment = null;
+    private String property;
+
+    /**
+     * Time Aspct.
+     */
+    private String timeAspct;
+
+    /**
+     * System.
+     */
+    private String system;
+
+    /**
+     * Scale typ.
+     */
+    private String scaleTyp;
 
     /**
      * Obtém loincNum.
@@ -32,47 +47,114 @@ public class Loinc {
     }
 
     /**
-     * Obtém mapTo.
-     *
-     * @return mapTo.
-     */
-    public final String getMapTo() {
-        return mapTo;
-    }
-
-    /**
-     * Obtém comment.
-     *
-     * @return comment.
-     */
-    public final String getComment() {
-        return comment;
-    }
-
-    /**
      * Altera loincNum.
      *
-     * @param loincNum loincNum a ser alterado.
+     * @param loincNum1 loincNum a ser alterado.
      */
-    public void setLoincNum(String loincNum) {
-        this.loincNum = loincNum;
+    public final void setLoincNum(final String loincNum1) {
+        this.loincNum = loincNum1;
     }
 
     /**
-     * Altera mapTo.
+     * Obtém component.
      *
-     * @param mapTo mapTo a ser alterado.
+     * @return component.
      */
-    public void setMapTo(String mapTo) {
-        this.mapTo = mapTo;
+    public final String getComponent() {
+        return component;
     }
 
     /**
-     * Altera comment.
+     * Altera component.
      *
-     * @param comment comment a ser alterado.
+     * @param component1 component a ser alterado.
      */
-    public void setComment(String comment) {
-        this.comment = comment;
+    public final void setComponent(final String component1) {
+        this.component = component1;
     }
+
+    /**
+     * Obtém property.
+     *
+     * @return property.
+     */
+    public final String getProperty() {
+        return property;
+    }
+
+    /**
+     * Altera property.
+     *
+     * @param property1 property a ser alterado.
+     */
+    public final void setProperty(final String property1) {
+        this.property = property1;
+    }
+
+    /**
+     * Obtém timeAspct.
+     *
+     * @return timeAspct.
+     */
+    public final String getTimeAspct() {
+        return timeAspct;
+    }
+
+    /**
+     * Altera timeAspct.
+     *
+     * @param timeAspct1 timeAspct a ser alterado.
+     */
+    public final void setTimeAspct(final String timeAspct1) {
+        this.timeAspct = timeAspct1;
+    }
+
+    /**
+     * Obtém system.
+     *
+     * @return system.
+     */
+    public final String getSystem() {
+        return system;
+    }
+
+    /**
+     * Altera system.
+     *
+     * @param system1 system a ser alterado.
+     */
+    public final void setSystem(final String system1) {
+        this.system = system1;
+    }
+
+    /**
+     * Obtém scaleTyp.
+     *
+     * @return scaleTyp.
+     */
+    public final String getScaleTyp() {
+        return scaleTyp;
+    }
+
+    /**
+     * Altera scaleTyp.
+     *
+     * @param scaleTyp1 scaleTyp a ser alterado.
+     */
+    public final void setScaleTyp(final String scaleTyp1) {
+        this.scaleTyp = scaleTyp1;
+    }
+
+    /**
+     * Retorna uma string com os atributos.
+     * @return String correspondente ao objeto.
+     */
+    public final String toString() {
+        String loinc = null;
+        loinc = this.loincNum + " " + this.component + " "
+                + this.property + " " + this.timeAspct + " "
+                + this.system + " " + this.scaleTyp;
+        return loinc;
+    }
+
 }

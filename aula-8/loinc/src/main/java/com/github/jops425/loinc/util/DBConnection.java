@@ -28,17 +28,14 @@ public final class DBConnection {
 
         try {
             try {
-                System.out.println("conexão");
                 Class.forName("com.mysql.jdbc.Driver");
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
             con = DriverManager.getConnection(url, username, password);
-            System.out.println("Printing connection object " + con);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("conectado");
         return con;
     }
 }
